@@ -148,6 +148,7 @@ export default function WhoWeWorkWith() {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
+            loop={true}
             navigation={{
               nextEl: ".swiper-button-next-custom",
               prevEl: ".swiper-button-prev-custom",
@@ -176,11 +177,11 @@ export default function WhoWeWorkWith() {
             {audienceItems.map((item, index) => (
               <SwiperSlide key={index}>
                 <article className="group h-full">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg h-48 md:h-64 bg-gray-200 mb-4">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg h-48 md:h-96 bg-gray-200 mb-4">
                     <Image
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full  object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold text-gray-900 text-center group-hover:text-pink-600 transition-colors duration-300">
@@ -221,3 +222,5 @@ export default function WhoWeWorkWith() {
     </section>
   );
 }
+
+

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Img1 from "../../public/assets/img/homepage/4.webp";
-import Img2 from "../../public/assets/img/homepage/5.webp";
-import Img3 from "../../public/assets/img/homepage/6.webp";
+import Img2 from "../../public/assets/img/homepage/6.webp";
+import Img3 from "../../public/assets/img/homepage/5.webp";
 import Img4 from "../../public/assets/img/homepage/7.webp";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -175,3 +175,5 @@ export default function CoreSolutions() {
     </section>
   );
 }
+
+

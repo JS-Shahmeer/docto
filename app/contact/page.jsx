@@ -17,8 +17,7 @@ const fadeUp = {
 
 export default function ContactPage() {
   return (
-    <main className="contact-page">
-      <section className="contact-hero">
+    <main className="contact-page"><section className="contact-hero">
         <div className="contact-bg-text">Contact</div>
         <div className="contact-orb contact-orb-one" />
         <div className="contact-orb contact-orb-two" />
@@ -149,3 +148,4 @@ export default function ContactPage() {
     </main>
   );
 }
+

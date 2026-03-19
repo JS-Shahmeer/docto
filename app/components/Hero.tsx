@@ -103,7 +103,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="bg-[#edf3f8] md:pt-8 pt-12" ref={heroSectionRef}>
+    <section className="bg-[#edf3f8] md:pt-28 pt-32" ref={heroSectionRef}>
       <div className="hero-bg-text" ref={bgTextRef}>
         Medical
       </div>
@@ -154,3 +154,5 @@ export default function Hero() {
     </section>
   );
 }
+
+

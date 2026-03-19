@@ -131,7 +131,7 @@ export default function AboutSection() {
             </div>
 
             <div className="flex flex-wrap items-center gap-6" ref={actionsRef}>
-              <a href="/contact">
+              <a href="/about">
                 <button className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
                   <span>See more</span>
                   <span className="text-white">|</span>
@@ -151,3 +151,5 @@ export default function AboutSection() {
     </section>
   );
 }
+
+
