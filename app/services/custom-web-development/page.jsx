@@ -1,320 +1,130 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
+import ServicePageLayout from "@/app/components/ServicePageLayout";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
-  visible: (delay = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      delay,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  }),
-};
-
-const staggerContainer = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
-    },
+const faqs = [
+  {
+    q: "What types of websites do you build?",
+    a: "We build everything from marketing websites and landing pages to complex web apps, client portals, booking systems, and internal platforms — all custom-built around your workflows.",
   },
-};
+  {
+    q: "How long does a custom website take?",
+    a: "Timelines vary by complexity. A marketing site typically takes 4–8 weeks. A complex platform or portal can take 10–16 weeks. We’ll give you a clear timeline after discovery.",
+  },
+  {
+    q: "Do you build on WordPress or custom frameworks?",
+    a: "We build on the best stack for your needs — Next.js, React, or headless CMS setups. We avoid limiting you to rigid page builders unless it suits the brief.",
+  },
+  {
+    q: "Will my site be SEO-friendly?",
+    a: "Absolutely. SEO structure, performance optimisation, semantic HTML, and Core Web Vitals are built in from the start — not bolted on at the end.",
+  },
+  {
+    q: "Can you integrate with our existing tools?",
+    a: "Yes. We regularly integrate with CRMs, booking systems, payment gateways, email platforms, ERPs, and custom APIs.",
+  },
+  {
+    q: "Do you provide ongoing support after launch?",
+    a: "We offer ongoing support and maintenance packages so your platform stays fast, secure, and evolving with your business.",
+  },
+];
 
 export default function CustomWebDevelopment() {
   return (
-    <main className="cwd-page">
-      <section className="cwd-hero">
-        <div className="cwd-hero-bg-text">Web</div>
-        <div className="cwd-orb cwd-orb-one" />
-        <div className="cwd-orb cwd-orb-two" />
-
-        <div className="container cwd-hero-grid">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="cwd-hero-left"
-          >
-            <motion.p
-              custom={0}
-              variants={fadeUp}
-              className="cwd-eyebrow"
-            >
-              Web &amp; Software Solutions
-            </motion.p>
-
-            <motion.h1
-              custom={0.1}
-              variants={fadeUp}
-              className="cwd-title"
-            >
-              Custom Web
-              <br />
-              Development
-            </motion.h1>
-
-            <motion.p
-              custom={0.2}
-              variants={fadeUp}
-              className="cwd-intro"
-            >
-              We build custom websites and web platforms designed around your
-              workflows, users, and growth goals. Instead of generic templates,
-              our solutions are tailored to your business and built to scale.
-            </motion.p>
-
-            <motion.div
-              custom={0.3}
-              variants={fadeUp}
-              className="cwd-actions"
-            >
-              <a href="/contact" className="cwd-btn cwd-btn-primary">
-                Book a Consultation
-              </a>
-
-              <a href="#process" className="cwd-btn cwd-btn-secondary">
-                Explore Process
-              </a>
-            </motion.div>
-
-            <motion.div
-              custom={0.4}
-              variants={fadeUp}
-              className="cwd-stats"
-            >
-              <div className="cwd-stat-card">
-                <span className="cwd-stat-value">Fast</span>
-                <span className="cwd-stat-label">Performance-first builds</span>
-              </div>
-
-              <div className="cwd-stat-card">
-                <span className="cwd-stat-value">Scalable</span>
-                <span className="cwd-stat-label">Built for long-term growth</span>
-              </div>
-
-              <div className="cwd-stat-card">
-                <span className="cwd-stat-value">Tailored</span>
-                <span className="cwd-stat-label">Designed around your needs</span>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 40, scale: 0.96 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="cwd-hero-right"
-          >
-            <div className="cwd-image-frame">
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
-                alt="Custom web development"
-                className="cwd-hero-image"
-              />
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.7 }}
-              className="cwd-floating-card"
-            >
-              <p className="cwd-floating-title">What we deliver</p>
-              <p className="cwd-floating-text">
-                Custom websites, portals, integrations, dashboards, and digital
-                experiences built to support real workflows.
-              </p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="cwd-overview-section">
-        <div className="container cwd-overview-grid">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="cwd-section-tag">What we build</p>
-            <h2 className="cwd-section-title">
-              Websites designed around your business
-            </h2>
-            <p className="cwd-section-text">
-              Our custom web development approach focuses on building digital
-              platforms that support real business workflows. Whether you need a
-              marketing website, internal platform, booking system, or client
-              portal, every solution is designed to be flexible, scalable, and
-              user-focused.
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="cwd-highlight-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-          >
-            {[
-              "Custom frontend and backend development",
-              "SEO-friendly structure and fast performance",
-              "Scalable architecture built for long-term growth",
-              "API integrations with third-party systems",
-            ].map((item, index) => (
-              <motion.div
-                key={item}
-                custom={index * 0.08}
-                variants={fadeUp}
-                className="cwd-highlight-card"
-              >
-                <span className="cwd-highlight-dot" />
-                <p>{item}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="cwd-features-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="cwd-section-heading-center"
-          >
-            <p className="cwd-section-tag">Why it stands out</p>
-            <h2 className="cwd-section-title">
-              Built for performance, usability, and growth
-            </h2>
-          </motion.div>
-
-          <motion.div
-            className="cwd-feature-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-          >
-            {[
-              {
-                title: "Strategy-led",
-                text: "Every build starts with your business goals, workflows, and user journeys.",
-              },
-              {
-                title: "Conversion-focused",
-                text: "We structure pages and experiences to guide users clearly toward action.",
-              },
-              {
-                title: "Scalable foundation",
-                text: "Your website or platform is built so it can expand as your business grows.",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={item.title}
-                custom={index * 0.1}
-                variants={fadeUp}
-                className="cwd-feature-card"
-              >
-                <div className="cwd-feature-icon" />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      <section id="process" className="cwd-process-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="cwd-section-tag">Our Process</p>
-            <h2 className="cwd-section-title">How we build your platform</h2>
-          </motion.div>
-
-          <motion.div
-            className="cwd-process-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.15 }}
-          >
-            {[
-              {
-                step: "01",
-                title: "Discovery",
-                text: "We analyse your goals, workflows, and users to define the structure of your platform.",
-              },
-              {
-                step: "02",
-                title: "Design",
-                text: "Our designers create intuitive interfaces focused on usability, clarity, and performance.",
-              },
-              {
-                step: "03",
-                title: "Development",
-                text: "We build scalable systems using modern frameworks and clean architecture.",
-              },
-              {
-                step: "04",
-                title: "Launch",
-                text: "After testing and optimisation, we launch your platform ready for growth.",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={item.step}
-                custom={index * 0.1}
-                variants={fadeUp}
-                className="cwd-process-card"
-              >
-                <span className="cwd-process-number">{item.step}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="cwd-cta-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98, y: 28 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.75 }}
-            className="cwd-cta-box"
-          >
-            <div>
-              <p className="cwd-cta-tag">Let’s build something tailored</p>
-              <h2 className="cwd-cta-title">
-                Ready to build a custom digital platform?
-              </h2>
-              <p className="cwd-cta-text">
-                Let’s talk about your goals, the functionality you need, and the
-                best way to bring your platform to life.
-              </p>
-            </div>
-
-            <a href="/contact" className="cwd-btn cwd-btn-primary cwd-cta-btn">
-              Book a Consultation
-            </a>
-          </motion.div>
-        </div>
-      </section>
-    </main>
+    <ServicePageLayout
+      category="Web & Software Solutions"
+      titleTop="Your"
+      titleMain="Custom Web"
+      titleBottom="Development"
+      intro="We build custom websites and web platforms designed around your workflows, users, and growth goals — not generic templates. Every solution is built to scale with your business."
+      primaryCtaText="Book a Consultation"
+      primaryCtaLink="/contact"
+      heroImage="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
+      heroImageAlt="Custom web development"
+      sectionTwoTitle="Your competitors have great websites. Do you?"
+      sectionTwoTextOne="The difference between a business that grows online and one that doesn't often comes down to the quality of their digital presence. A generic template won't cut it when your competitors are investing in custom platforms built for conversion."
+      sectionTwoTextTwo="We build websites that are fast, scalable, and designed with your specific users and workflows in mind — giving you a platform that works as hard as you do."
+      sectionTwoImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+      sectionTwoImageAlt="Competitor landscape"
+      featureCards={[
+        {
+          icon: "⚡",
+          title: "Performance-First Builds",
+          text: "Every project is optimised for Core Web Vitals, fast load times, and smooth interactions from day one.",
+        },
+        {
+          icon: "📐",
+          title: "Strategy-Led Design",
+          text: "We start with your business goals, user journeys, and conversion targets — then design around them.",
+        },
+        {
+          icon: "🔗",
+          title: "Deep Integrations",
+          text: "CRMs, booking systems, payment gateways, APIs — we connect your web platform to your entire business stack.",
+        },
+      ]}
+      valueTitle="More leads with a website built for conversion"
+      valueTextOne="A beautiful website that doesn't convert is just an expensive business card. We build with conversion architecture in mind — structuring every page, CTA, and user journey to turn visitors into enquiries."
+      valueTextTwo="From landing pages to full platforms, we focus on what actually matters: measurable results for your business."
+      valueImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+      valueImageAlt="Conversion analytics"
+      consultationText="Looking for a Free Web Development Consultation?"
+      buildTitle="We build digital platforms for every use case"
+      buildItems={[
+        "Custom marketing websites & landing pages",
+        "Web applications & SaaS platforms",
+        "Client portals & internal dashboards",
+        "Booking & appointment systems",
+        "eCommerce & payment integrations",
+        "API integrations with third-party tools",
+      ]}
+      buildImage="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop"
+      buildImageAlt="Digital platform development"
+      processTitle="How we build your platform"
+      processSteps={[
+        {
+          step: "01",
+          title: "Discovery",
+          text: "We analyse your goals, workflows, and users to define the structure and functionality of your platform.",
+        },
+        {
+          step: "02",
+          title: "Design",
+          text: "Wireframes and high-fidelity designs focused on usability, clarity, brand, and conversion performance.",
+        },
+        {
+          step: "03",
+          title: "Development",
+          text: "Clean, scalable code built with modern frameworks — with performance and maintainability baked in.",
+        },
+        {
+          step: "04",
+          title: "Launch",
+          text: "After rigorous testing and optimisation, we launch your platform ready to grow with your business.",
+        },
+      ]}
+      quoteText="Our team builds platforms with strategy, precision, and a focus on real business outcomes — not just pixel-perfect designs that don't convert."
+      relatedServices={[
+        {
+          icon: "🎨",
+          title: "UI/UX Design",
+          text: "User-centred interface design that turns complex workflows into simple, intuitive digital experiences.",
+        },
+        {
+          icon: "📱",
+          title: "Responsive Web Design",
+          text: "Every platform we build is optimised for all screen sizes — desktop, tablet, and mobile.",
+        },
+        {
+          icon: "🏢",
+          title: "Enterprise Solutions",
+          text: "Large-scale platforms built for complex organisational needs, multiple users, and deep integrations.",
+        },
+      ]}
+      faqs={faqs}
+      finalCtaText="Our team builds digital platforms with strategy, precision, and a focus on outcomes — giving you complete transparency throughout every stage of the project."
+      finalCtaButtonText="Book Your Free Web Consultation"
+      finalCtaButtonLink="/contact"
+    />
   );
 }

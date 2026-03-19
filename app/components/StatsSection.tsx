@@ -27,7 +27,7 @@ function CountUp({ end, suffix = "" }: CountUpProps) {
           setHasAnimated(true);
         }
       },
-      { threshold: 0.4 },
+      { threshold: 0.4 }
     );
 
     observer.observe(node);
@@ -128,7 +128,7 @@ export default function StatsSection() {
           duration: 0.6,
           stagger: 0.1,
         },
-        0,
+        0
       );
     }
 
@@ -139,7 +139,7 @@ export default function StatsSection() {
         y: isMobile ? 20 : 30,
         duration: 0.8,
       },
-      0.2,
+      0.2
     );
 
     return () => {
@@ -192,8 +192,7 @@ export default function StatsSection() {
                 className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <span className="group-hover:text-[#ef2f6b] transition-colors flex flex-col gap-2">
-                  <strong>Phone:</strong>{" "}
-                  <span>+612 5119 4369</span>
+                  <strong>Phone:</strong> <span>+612 5119 4369</span>
                 </span>
               </a>
 
