@@ -106,7 +106,7 @@ const ServicesAbout = () => {
                   quarterly, or monthly.
                 </p>
                 <Link
-                  href="/health/contact"
+                  href="/contact"
                   className="px-6 py-3 w-max bg-[#ef2f6b] text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2"
                 >
                   <span>Get in Touch</span>
@@ -137,7 +137,7 @@ const ServicesAbout = () => {
                   brands.
                 </p>
                 <Link
-                  href="/health/contact"
+                  href="/contact"
                   className="px-6 py-3 w-max bg-[#ef2f6b] text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2"
                 >
                   <span>Get in Touch</span>

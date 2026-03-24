@@ -201,7 +201,7 @@ export default function ServicePageLayout({
           <Link
             data-aos="fade-up"
             data-aos-delay="100"
-            href="/health/contact"
+            href="/contact"
             className="service-btn service-btn-white"
           >
             Book Now
@@ -301,7 +301,7 @@ export default function ServicePageLayout({
           <Link
             data-aos="fade-up"
             data-aos-delay="100"
-            href="/health/contact"
+            href="/contact"
             className="service-btn service-btn-primary"
           >
             Book Your Free Consultation
@@ -375,7 +375,7 @@ export default function ServicePageLayout({
           </div>
 
           {/* <div data-aos="fade-up" className="service-faq-footer">
-            <Link href="/health/contact" className="service-btn service-btn-dark">
+            <Link href="/contact" className="service-btn service-btn-dark">
               Book Your <u>Free</u> Consultation
             </Link>
           </div> */}

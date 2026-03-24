@@ -44,7 +44,7 @@ export default function Header() {
 
   const isActive = (path: string) => pathname === path;
 
-  const isServicesActive = () => pathname.startsWith("/health/services");
+  const isServicesActive = () => pathname.startsWith("/services");
 
   return (
     <header className={`w-full fixed top-0 ${!isScrolled ? "lg:top-12" : ""} left-0 right-0 z-40 bg-white shadow-md transition-all duration-300`}>
@@ -58,9 +58,9 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             <Link
-              href="/health"
+              href="/"
               className={`text-base font-bold transition-colors ${
-                isActive("/health")
+                isActive("/")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
@@ -74,7 +74,7 @@ export default function Header() {
               onMouseLeave={handleMouseLeave}
             >
               <Link
-                href="/health/services"
+                href="/services"
                 className={`text-base font-bold transition-colors ${
                   isServicesActive() || servicesDropdownOpen
                     ? "text-[#ef2f6b]"
@@ -87,9 +87,9 @@ export default function Header() {
             </div>
 
             <Link
-              href="/health/about"
+              href="/about"
               className={`text-base font-bold transition-colors ${
-                isActive("/health/about")
+                isActive("/about")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
@@ -98,9 +98,9 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/health/contact"
+              href="/contact"
               className={`text-base font-bold transition-colors ${
-                isActive("/health/contact")
+                isActive("/contact")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
@@ -110,7 +110,7 @@ export default function Header() {
           </nav>
 
           <Link
-            href="/health/contact"
+            href="/contact"
             className="hidden lg:inline-flex items-center justify-center bg-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors"
           >
             Get in Touch
@@ -157,14 +157,14 @@ export default function Header() {
 
             <nav className="flex flex-col gap-1 p-6 overflow-y-auto flex-1">
               <Link
-                href="/health"
+                href="/"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
                 Home
               </Link>
               <Link
-                href="/health/about"
+                href="/about"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
@@ -202,7 +202,7 @@ export default function Header() {
                         {group.services.map((service) => (
                           <Link
                             key={service.slug}
-                            href={`/health/services/${service.slug}`}
+                            href={`/services/${service.slug}`}
                             className="text-sm text-slate-300 hover:text-pink-400 transition-colors"
                             onClick={closeMenu}
                           >
@@ -216,7 +216,7 @@ export default function Header() {
               </div>
 
               <Link
-                href="/health/contact"
+                href="/contact"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >

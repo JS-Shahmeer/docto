@@ -1,24 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function CaseStudies() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const bgTextRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const subtitleRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
 
   // const projects = [
   //   {
@@ -356,64 +345,9 @@ export default function CaseStudies() {
     },
   ];
 
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768;
-
-    // Background text animation
-    gsap.to(bgTextRef.current, {
-      y: isMobile ? 20 : 40,
-      opacity: 0.15,
-      duration: 3,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-    });
-
-    // Timeline for animations
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center",
-      },
-      defaults: { ease: "power3.out" },
-    });
-
-    tl.from(
-      subtitleRef.current,
-      {
-        opacity: 0,
-        y: isMobile ? 15 : 20,
-        duration: 0.6,
-      },
-      0,
-    )
-      .from(
-        titleRef.current,
-        {
-          opacity: 0,
-          y: isMobile ? 20 : 40,
-          duration: 0.8,
-        },
-        0.1,
-      )
-      .from(
-        lineRef.current,
-        {
-          opacity: 0,
-          width: 0,
-          duration: 0.6,
-        },
-        0.2,
-      );
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
   return (
     <section className="relative py-16 md:py-20">
-      <div className="case-studies-bg-text" ref={bgTextRef}>
+      <div className="case-studies-bg-text">
         Case Studies
       </div>
 
@@ -421,19 +355,21 @@ export default function CaseStudies() {
         <div className="text-center">
           <p
             className="text-base md:text-lg mb-2 text-[#ef2f6b] font-semibold"
-            ref={subtitleRef}
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             Case Studies
           </p>
 
           <h2
             className="text-black md:text-5xl text-3xl font-extrabold mb-6 relative z-10"
-            ref={titleRef}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             Real Results For Healthcare Clients
           </h2>
 
-          <div className="w-24 h-1.5 bg-[#97bb67] mb-8 md:mb-12 mx-auto" />
+          <div className="w-24 h-1.5 bg-[#97bb67] mb-8 md:mb-12 mx-auto" data-aos="fade-up" data-aos-delay="300" />
         </div>
 
         {/* 🔹 Swiper Slider */}
@@ -448,6 +384,8 @@ export default function CaseStudies() {
             disableOnInteraction: false,
           }}
           className="mx-auto max-w-7xl"
+          data-aos="fade-up"
+          data-aos-delay="400"
         >
           {projects.map((p, index) => (
             <SwiperSlide key={p.id}>
@@ -511,7 +449,7 @@ export default function CaseStudies() {
                     {/* Buttons */}
                     <div className="flex flex-col gap-4 sm:flex-row">
                       <Link
-                        href="/health/contact"
+                        href="/contact"
                         className="bg-[#ef2f6b] hover:bg-[#d92a5a] text-white px-10 py-3 rounded-md font-medium transition text-sm text-center"
                       >
                         Get a quote now
