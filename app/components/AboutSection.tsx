@@ -1,8 +1,7 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import Img1 from "../../public/assets/img/homepage/8.webp";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -131,13 +130,13 @@ export default function AboutSection() {
             </div>
 
             <div className="flex flex-wrap items-center gap-6" ref={actionsRef}>
-              <a href="/about">
-                <button className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                  <span>See more</span>
-                  <span className="text-white">|</span>
-                  <span>+</span>
-                </button>
-              </a>
+<Link href="/health/about">
+              <button className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                <span>See more</span>
+                <span className="text-white">|</span>
+                <span>+</span>
+              </button>
+            </Link>
 
               <a href="tel:61251194369" className="group">
                 <span className="group-hover:text-[#d92a5a] transition-colors font-bold text-lg">

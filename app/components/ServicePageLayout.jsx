@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import PropTypes from "prop-types";
 import ProcessSectionServices from "@/app/components/ProcessSectionServices";
 import CTASection from "@/app/components/CTASection";
@@ -100,12 +101,12 @@ export default function ServicePageLayout({
 
             <p className="service-intro">{intro}</p>
 
-            <a
+            <Link
               href={primaryCtaLink}
               className="service-btn service-btn-primary"
             >
               {primaryCtaText}
-            </a>
+            </Link>
           </div>
 
           <div
@@ -197,14 +198,14 @@ export default function ServicePageLayout({
             {consultationText}
           </p>
 
-          <a
+          <Link
             data-aos="fade-up"
             data-aos-delay="100"
-            href="/contact"
+            href="/health/contact"
             className="service-btn service-btn-white"
           >
             Book Now
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -297,14 +298,14 @@ export default function ServicePageLayout({
             {quoteText}
           </p>
 
-          <a
+          <Link
             data-aos="fade-up"
             data-aos-delay="100"
-            href="/contact"
+            href="/health/contact"
             className="service-btn service-btn-primary"
           >
             Book Your Free Consultation
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -374,9 +375,9 @@ export default function ServicePageLayout({
           </div>
 
           {/* <div data-aos="fade-up" className="service-faq-footer">
-            <a href="/contact" className="service-btn service-btn-dark">
+            <Link href="/health/contact" className="service-btn service-btn-dark">
               Book Your <u>Free</u> Consultation
-            </a>
+            </Link>
           </div> */}
         </div>
       </section>
@@ -388,14 +389,14 @@ export default function ServicePageLayout({
             {finalCtaText}
           </p>
 
-          <a
+          <Link
             data-aos="fade-up"
             data-aos-delay="100"
             href={finalCtaButtonLink}
             className="service-btn service-btn-white"
           >
             {finalCtaButtonText}
-          </a>
+          </Link>
         </div>
       </section> */}
       <CTASection />

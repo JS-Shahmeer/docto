@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -509,19 +510,19 @@ export default function CaseStudies() {
 
                     {/* Buttons */}
                     <div className="flex flex-col gap-4 sm:flex-row">
-                      <a
-                        href="/contact"
+                      <Link
+                        href="/health/contact"
                         className="bg-[#ef2f6b] hover:bg-[#d92a5a] text-white px-10 py-3 rounded-md font-medium transition text-sm text-center"
                       >
                         Get a quote now
-                      </a>
+                      </Link>
 
-                      {/* <a
+                      {/* <Link
                         href={p.link}
                         className="border justify-center border-[#ff7a3d] hover:bg-[#ff4d2d] md:text-white text-black px-6 py-3 rounded-md font-medium transition flex items-center gap-2 text-sm"
                       >
                         View Case Studies
-                      </a> */}
+                      </Link> */}
                     </div>
                   </div>
                 </div>

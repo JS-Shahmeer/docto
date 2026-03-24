@@ -61,7 +61,7 @@ export default function ServicesDropdown({
                 const isActive = pathname === `/services/${service.slug}`;
                 return (
                   <li key={service.slug}>
-                    <a
+                    <Link
                       href={`/services/${service.slug}`}
                       className={`flex flex-col gap-1 text-decoration-none transition-all group ${
                         isActive ? "opacity-100" : ""
@@ -86,7 +86,7 @@ export default function ServicesDropdown({
                       >
                         {service.description}
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
@@ -107,7 +107,7 @@ export default function ServicesDropdown({
                 const isActive = pathname === `/services/${service.slug}`;
                 return (
                   <li key={service.slug}>
-                    <a
+                    <Link
                       href={`/services/${service.slug}`}
                       className={`block text-sm transition-colors ${
                         isActive
@@ -117,7 +117,7 @@ export default function ServicesDropdown({
                       onClick={onClose}
                     >
                       {service.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

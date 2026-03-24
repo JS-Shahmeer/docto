@@ -163,19 +163,19 @@ export default function CTASection() {
             </p>
 
             <div className="flex flex-wrap gap-4" ref={buttonsRef}>
-              <a href="/contact">
+              <Link href="/health/contact">
                 <button className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center gap-2">
                   <span>Contact Us</span>
                   <span>|</span>
                   <span>+</span>
                 </button>
-              </a>
+              </Link>
 
-              <a href="/services" className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
+              <Link href="/health/services" className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
                 <span>Our Services</span>
                 <span>|</span>
                 <span>+</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

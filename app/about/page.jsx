@@ -58,13 +58,13 @@ export default function AboutPage() {
               custom={0.3}
               className="about-hero-actions"
             >
-              <a href="/contact" className="btn-primary">
+              <Link href="/health/contact" className="btn-primary">
                 Work With Us
-              </a>
+              </Link>
 
-              <a href="/services" className="btn-secondary">
-                Our Services
-              </a>
+              <Link href="/health/services" className="btn-secondary">
+                View Services
+              </Link>
             </motion.div>
 
             <motion.div
@@ -347,9 +347,9 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <a href="/contact" className="btn-primary">
+          <Link href="/contact" className="btn-primary">
             Get In Touch
-          </a>
+          </Link>
         </motion.div>
       </section>
     </main>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Img1 from "../../public/assets/img/homepage/15.webp";
 import Img2 from "../../public/assets/img/homepage/16.webp";
@@ -202,13 +203,13 @@ export default function WhoWeWorkWith() {
         </div>
 
         <div className="flex items-center justify-center mt-6 md:mt-10">
-          <a href="/contact">
+          <Link href="/health/contact">
             <button className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
               <span>Work With Us</span>
               <span className="text-white">|</span>
               <span>+</span>
             </button>
-          </a>
+          </Link>
         </div>
 
         <p

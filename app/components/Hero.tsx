@@ -1,8 +1,7 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import Img1 from "../../public/assets/img/homepage/3.webp";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -126,16 +125,16 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons" ref={buttonsRef}>
-            <a href="/services" className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            <Link href="/health/services" className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
               <span>Our Services</span>
               <span className="hero-services-divider">|</span>
               <span>+</span>
-            </a>
-            <a href="/contact" className="px-6 py-3 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            </Link>
+            <Link href="/health/contact" className="px-6 py-3 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
               <span>Get in Touch</span>
               <span className="hero-services-divider">|</span>
               <span>+</span>
-            </a>
+            </Link>
 
             {/* <button className="play-button" aria-label="Play video">
               ▶

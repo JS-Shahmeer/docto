@@ -44,37 +44,37 @@ export default function Header() {
 
   const isActive = (path: string) => pathname === path;
 
-  const isServicesActive = () => pathname.startsWith("/services");
+  const isServicesActive = () => pathname.startsWith("/health/services");
 
   return (
     <header className={`w-full fixed top-0 ${!isScrolled ? "lg:top-12" : ""} left-0 right-0 z-40 bg-white shadow-md transition-all duration-300`}>
       <div className="flex items-center justify-between gap-6 container mx-auto md:min-h-[88px] min-h-[70px]">
-        <a href="/" className="flex items-center gap-3 min-w-[220px]">
+        <Link href="/" className="flex items-center gap-3 min-w-[220px]">
           <Image src={Logo} alt="Healthcare Logo" className="md:h-10 h-8 w-auto" />
-        </a>
+        </Link>
 
         {/* Right side - Desktop Navigation + CTA */}
         <div className="flex items-center gap-6 justify-end flex-1">
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
-            <a
-              href="/"
+            <Link
+              href="/health"
               className={`text-base font-bold transition-colors ${
-                isActive("/")
+                isActive("/health")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
               Home
-            </a>
+            </Link>
 
             <div
               className="relative"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <a
-                href="/services"
+              <Link
+                href="/health/services"
                 className={`text-base font-bold transition-colors ${
                   isServicesActive() || servicesDropdownOpen
                     ? "text-[#ef2f6b]"
@@ -83,38 +83,38 @@ export default function Header() {
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
               >
                 Services
-              </a>
+              </Link>
             </div>
 
-            <a
-              href="/about"
+            <Link
+              href="/health/about"
               className={`text-base font-bold transition-colors ${
-                isActive("/about")
+                isActive("/health/about")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
               About
-            </a>
+            </Link>
 
-            <a
-              href="/contact"
+            <Link
+              href="/health/contact"
               className={`text-base font-bold transition-colors ${
-                isActive("/contact")
+                isActive("/health/contact")
                   ? "text-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
               Contact
-            </a>
+            </Link>
           </nav>
 
-          <a
-            href="/contact"
+          <Link
+            href="/health/contact"
             className="hidden lg:inline-flex items-center justify-center bg-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors"
           >
             Get in Touch
-          </a>
+          </Link>
 
           <button
             className="lg:hidden text-2xl text-slate-900 cursor-pointer"
@@ -156,20 +156,20 @@ export default function Header() {
             </div>
 
             <nav className="flex flex-col gap-1 p-6 overflow-y-auto flex-1">
-              <a
-                href="/"
+              <Link
+                href="/health"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
                 Home
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                href="/health/about"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
                 About
-              </a>
+              </Link>
 
               <div className="my-2">
                 <button
@@ -180,9 +180,9 @@ export default function Header() {
                   }`}
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 >
-                  <a href="/services" className="text-white">
+                  <Link href="/services" className="text-white">
                     Services
-                  </a>
+                  </Link>
                   <span
                     className={`text-xs transition-transform ${
                       mobileServicesOpen ? "rotate-180" : ""
@@ -202,7 +202,7 @@ export default function Header() {
                         {group.services.map((service) => (
                           <Link
                             key={service.slug}
-                            href={`/services/${service.slug}`}
+                            href={`/health/services/${service.slug}`}
                             className="text-sm text-slate-300 hover:text-pink-400 transition-colors"
                             onClick={closeMenu}
                           >
@@ -215,13 +215,13 @@ export default function Header() {
                 )}
               </div>
 
-              <a
-                href="/contact"
+              <Link
+                href="/health/contact"
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </nav>
           </aside>
         </>

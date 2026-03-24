@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Brain, Settings, Search, Star } from "lucide-react";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -170,12 +171,12 @@ export default function GrowthSection() {
               <p className="text-base text-gray-600">
                 {growthCards.leftTop.description}
               </p>
-              <a
-                href="/contact"
+              <Link
+                href="/health/contact"
                 className="text-pink-600 hover:text-pink-700 mt-4 inline-block font-medium"
               >
                 Read More »
-              </a>
+              </Link>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 md:ml-8 md:mt-8">
@@ -188,12 +189,12 @@ export default function GrowthSection() {
               <p className="text-base text-gray-600">
                 {growthCards.leftBottom.description}
               </p>
-              <a
-                href="/contact"
+              <Link
+                href="/health/contact"
                 className="text-pink-600 hover:text-pink-700 mt-4 inline-block font-medium"
               >
                 Read More »
-              </a>
+              </Link>
             </article>
           </div>
 
@@ -205,7 +206,7 @@ export default function GrowthSection() {
             <Image
               src={Img1}
               alt="Healthcare professional placeholder"
-              className="w-1/2 md:w-auto mx-auto"
+              className="w-1/2 mx-auto"
             />
           </div>
 
@@ -224,12 +225,12 @@ export default function GrowthSection() {
               <p className="text-base text-gray-600">
                 {growthCards.rightTop.description}
               </p>
-              <a
-                href="/contact"
+              <Link
+                href="/health/contact"
                 className="text-pink-600 hover:text-pink-700 mt-4 inline-block font-medium"
               >
                 Read More »
-              </a>
+              </Link>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 md:mr-8 md:mt-8">
@@ -242,12 +243,12 @@ export default function GrowthSection() {
               <p className="text-base text-gray-600">
                 {growthCards.rightBottom.description}
               </p>
-              <a
-                href="/contact"
+              <Link
+                href="/health/contact"
                 className="text-pink-600 hover:text-pink-700 mt-4 inline-block font-medium"
               >
                 Read More »
-              </a>
+              </Link>
             </article>
           </div>
         </div>

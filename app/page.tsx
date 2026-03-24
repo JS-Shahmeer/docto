@@ -1,3 +1,4 @@
+
 import Hero from "./components/Hero";
 import ClinicChallenges from "./components/ClinicChallenges";
 import CoreSolutions from "./components/CoreSolutions";
@@ -9,6 +10,7 @@ import CTASection from "./components/CTASection";
 import StatsSection from "./components/StatsSection";
 import ProcessSection from "./components/ProcessSection";
 import FocusSection from "./components/FocusSection";
+import { useGSAPAnimation } from "./hooks/useGSAPAnimation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+
   return (
     <>
       <Hero />
