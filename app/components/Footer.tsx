@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "../../public/assets/img/Logos/LogoLight.webp";
+import Logo from "../../public/assets/img/Logos/LogoNew.png";
 import Image from "next/image";
 
 export default function Footer() {
@@ -30,13 +30,17 @@ export default function Footer() {
         <div className="footer-column">
           <div className="footer-brand mb-6">
             <Link href="/" className="footer-logo">
-              <Image src={Logo} alt="Healthcare Logo" className="h-8 w-auto" />
+              <Image
+                src={Logo}
+                alt="Healthcare Logo"
+                className="h-8 w-auto"
+                style={{ filter: "brightness(0) invert(1)", mixBlendMode: "screen" }}
+              />
             </Link>
           </div>
 
           <p className="footer-about-text">
-            It is a long established fact that the read will been distracted by
-            there readable an important content.
+            Helping healthcare brands grow with clarity, trust, and strategy.
           </p>
         </div>
 
@@ -91,12 +95,8 @@ export default function Footer() {
         <p className="text-sm">
           Health | Powered by: <strong>Digital Paradigm</strong>
         </p>
-        <p className="text-sm">
-          © Health {currentYear} | All Right Reserved
-        </p>
+        <p className="text-sm">© Health {currentYear} | All Right Reserved</p>
       </div>
     </footer>
   );
 }
-
-

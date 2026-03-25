@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "../../public/assets/img/Logos/LogoDark.webp";
+import Logo from "../../public/assets/img/Logos/LogoNew.png";
 import Image from "next/image";
 import ServicesDropdown from "./ServicesDropdown";
 import { serviceGroups } from "../data/services";

@@ -46,6 +46,13 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     notFound();
   }
 
+  const galleryImages =
+    service.slug !== "influencer-marketing"
+      ? [1, 2, 3, 4].map((n) =>
+          `/assets/img/services-page/${service.slug}/${String(n).padStart(3, "0")}.webp`
+        )
+      : [];
+
   return (
     <main className="service-detail-page">
       {/* Hero */}
@@ -103,7 +110,24 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
         </div>
       </section>
 
-
+      {galleryImages.length > 0 && (
+        <section className="service-detail-gallery">
+          <div className="container">
+            <h2 className="service-detail-heading">Service Page Gallery</h2>
+            <div className="service-gallery-grid">
+              {galleryImages.map((src, index) => (
+                <div key={src} className="service-gallery-item">
+                  <img
+                    src={src}
+                    alt={`${service.title} screenshot ${index + 1}`}
+                    className="service-gallery-image"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="service-cta-section">

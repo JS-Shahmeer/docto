@@ -39,12 +39,12 @@ export default function Page() {
   return (
     <>
       <Hero />
+      <CaseStudies />
       <ClinicChallenges />
       <CoreSolutions />
       <AboutSection />
       <GrowthSection />
       <WhoWeWorkWith />
-      <CaseStudies />
       <CTASection />
       <StatsSection />
       <ProcessSection />

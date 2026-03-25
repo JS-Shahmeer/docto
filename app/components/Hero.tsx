@@ -34,11 +34,11 @@ export default function Hero() {
               <span className="hero-services-divider">|</span>
               <span>+</span>
             </Link>
-            <Link href="/contact" className="px-6 py-3 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
-              <span>Get in Touch</span>
+            <a href="https://calendly.com/digitalparadigm/product-strategy-call" target="_blank" className="px-6 py-3 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <span>Book a Free Consultation</span>
               <span className="hero-services-divider">|</span>
               <span>+</span>
-            </Link>
+            </a>
 
             {/* <button className="play-button" aria-label="Play video">
               ▶
