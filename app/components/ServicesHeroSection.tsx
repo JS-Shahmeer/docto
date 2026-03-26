@@ -109,8 +109,8 @@ const ServicesHeroSection = () => {
             ref={titleRef}
             className="mb-4 text-4xl font-bold leading-tight text-black md:text-5xl"
           >
-            <span className="text-[#ef2f6b]">AI-Powered</span> Web Design and
-            Development For Your Business Growth
+            <span className="text-[#ef2f6b]">Digital Systems for Clinics,</span>{" "}
+            Healthcare Providers & Medical Startups
           </h1>
 
           {/* Description */}

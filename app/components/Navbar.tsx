@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "../../public/assets/img/Logos/LogoNew.png";
+import Logo from "../../public/assets/img/Logos/LogoDark.webp";
 import Image from "next/image";
 import ServicesDropdown from "./ServicesDropdown";
 import { serviceGroups } from "../data/services";
@@ -42,7 +42,12 @@ export default function Header() {
     setServicesDropdownOpen(true);
   };
 
-  const isActive = (path: string) => pathname === path;
+  const isActive = (path: string) => {
+    const normalizedPathname = pathname.replace(/\/$/, '');
+    const normalizedPath = path.replace(/\/$/, '');
+    return normalizedPathname === normalizedPath;
+  };
+
 
   const isServicesActive = () => pathname.startsWith("/services");
 
@@ -61,7 +66,7 @@ export default function Header() {
               href="/"
               className={`text-base font-bold transition-colors ${
                 isActive("/")
-                  ? "text-[#ef2f6b]"
+                  ? "text-[#ef2f6b] border-b-2 border-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
@@ -77,7 +82,7 @@ export default function Header() {
                 href="/services"
                 className={`text-base font-bold transition-colors ${
                   isServicesActive() || servicesDropdownOpen
-                    ? "text-[#ef2f6b]"
+                    ? "text-[#ef2f6b] border-b-2 border-[#ef2f6b]"
                     : "text-slate-900 hover:text-[#ef2f6b]"
                 }`}
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
@@ -90,18 +95,18 @@ export default function Header() {
               href="/about"
               className={`text-base font-bold transition-colors ${
                 isActive("/about")
-                  ? "text-[#ef2f6b]"
+                  ? "text-[#ef2f6b] border-b-2 border-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
-              About
+              About Us
             </Link>
 
             <Link
               href="/contact"
               className={`text-base font-bold transition-colors ${
                 isActive("/contact")
-                  ? "text-[#ef2f6b]"
+                  ? "text-[#ef2f6b] border-b-2 border-[#ef2f6b]"
                   : "text-slate-900 hover:text-[#ef2f6b]"
               }`}
             >
@@ -168,14 +173,14 @@ export default function Header() {
                 onClick={closeMenu}
                 className="px-4 py-3 text-white hover:bg-slate-800 rounded transition-colors"
               >
-                About
+                About Us
               </Link>
 
               <div className="my-2">
                 <button
                   className={`w-full flex items-center justify-between px-4 py-3 rounded transition-colors font-semibold ${
                     isServicesActive()
-                      ? "text-[#ef2f6b] bg-slate-800"
+                      ? "text-[#ef2f6b] bg-slate-800 border-b-2 border-[#ef2f6b]"
                       : "text-white hover:bg-slate-800"
                   }`}
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}

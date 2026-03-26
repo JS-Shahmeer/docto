@@ -512,12 +512,12 @@ export default function CaseStudies() {
                     {/* Meta */}
                     <div className="flex flex-col gap-4 mb-7 md:mb-10 mt-4 text-sm md:text-base">
                       <div className="flex flex-col gap-4 md:flex-row md:gap-10">
-                        <div className="flex flex-row gap-1 md:gap-0 md:flex-col">
+                        {/* <div className="flex flex-row gap-1 md:gap-0 md:flex-col">
                           <span className="text-sm font-medium text-slate-700">
                             Category:
                           </span>
                           <span className="font-semibold">{p.category}</span>
-                        </div>
+                        </div> */}
                         <div className="flex flex-row gap-1 md:gap-0 md:flex-col">
                           <span className="text-sm font-medium text-slate-700">
                             Platform:
@@ -549,7 +549,7 @@ export default function CaseStudies() {
                         href={p.link}
                         className="justify-center border-[#ef2f6b] border-2 hover:bg-[#ef2f6b] text-black hover:text-white px-6 py-3 rounded-md font-medium transition flex items-center gap-2 text-sm"
                       >
-                        View Case Studies
+                        View Case Study
                       </Link>
                     </div>
                   </div>

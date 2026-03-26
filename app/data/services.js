@@ -1,6 +1,6 @@
 export const serviceGroups = [
   {
-    category: "Web and Software Solutions",
+    category: "Software Development",
     services: [
       {
         title: "Custom Web Development",
@@ -90,7 +90,7 @@ export const serviceGroups = [
     ],
   },
   {
-    category: "Design and Branding",
+    category: "Design and UX",
     services: [
       {
         title: "UI/UX Design",
@@ -146,7 +146,7 @@ export const serviceGroups = [
     ],
   },
   {
-    category: "Digital Marketing",
+    category: "Marketing & Growth",
     services: [
       {
         title: "Search Engine Optimization (SEO)",

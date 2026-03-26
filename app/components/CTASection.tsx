@@ -4,8 +4,6 @@ import ScrollToTopButton from "./ScrollToTopButton";
 import Link from "next/link";
 
 export default function CTASection() {
-  
-
   return (
     <section
       className="relative py-16 md:py-20"
@@ -19,10 +17,8 @@ export default function CTASection() {
       {/* Black overlay with 70% opacity */}
       <div className="absolute inset-0 bg-black opacity-80" />
 
-      <div
-        className="container mx-auto px-4 max-w-7xl relative z-10"
-      >
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="grid md:grid-cols-1 gap-12 items-center mb-12">
           <div>
             <p
               className="text-base md:text-lg mb-2 text-pink-300 font-semibold"
@@ -33,7 +29,7 @@ export default function CTASection() {
             </p>
 
             <h2
-              className="text-white md:text-5xl text-3xl font-extrabold mb-6"
+              className="text-white md:text-6xl text-3xl font-extrabold mb-6"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -47,10 +43,14 @@ export default function CTASection() {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              We&apos;ve 25 Years of experience in Medical Services.
+              Experienced Healthcare Technology Specialists
             </p>
 
-            <div className="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="400">
+            <div
+              className="flex flex-wrap gap-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <Link href="/contact">
                 <button className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center gap-2">
                   <span>Contact Us</span>
@@ -59,7 +59,10 @@ export default function CTASection() {
                 </button>
               </Link>
 
-              <Link href="/services" className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
+              <Link
+                href="/services"
+                className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+              >
                 <span>Our Services</span>
                 <span>|</span>
                 <span>+</span>
@@ -68,7 +71,7 @@ export default function CTASection() {
           </div>
         </div>
 
-        <div className="border-t border-pink-700 pt-8">
+        {/* <div className="border-t border-pink-700 pt-8">
           <p className="text-pink-300 text-sm uppercase tracking-wider mb-6 text-center font-extrabold" data-aos="fade-up" data-aos-delay="500">
             Featured Clients
           </p>
@@ -83,12 +86,10 @@ export default function CTASection() {
             <div className="text-white font-bold text-lg">SAFEGUARD.</div>
             <div className="text-white font-bold text-lg">duragas</div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <ScrollToTopButton />
     </section>
   );
 }
-
-

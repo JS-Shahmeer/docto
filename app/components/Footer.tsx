@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "../../public/assets/img/Logos/LogoNew.png";
+import Logo from "../../public/assets/img/Logos/LogoLight.webp";
 import Image from "next/image";
 
 export default function Footer() {
@@ -16,13 +16,29 @@ export default function Footer() {
     { href: "/contact", label: "Contact" },
   ];
 
+  const normalizePath = (path: string) => path.replace(/\/$/, "");
+
+  const isActiveFooterLink = (href: string) => {
+    const normalizedPathname = normalizePath(pathname || "");
+    const normalizedHref = normalizePath(href);
+
+    if (normalizedHref === "/services") {
+      return (
+        normalizedPathname === "/services" ||
+        normalizedPathname.startsWith("/services/")
+      );
+    }
+
+    return normalizedPathname === normalizedHref;
+  };
+
   const linkClass = (href: string) =>
-    href === pathname
-      ? "font-semibold"
+    isActiveFooterLink(href)
+      ? "font-semibold text-[#ef2f6b]"
       : "text-white hover:text-pink-500 font-thin";
 
   const linkStyle = (href: string) =>
-    href === pathname ? { color: "#ec4899" } : undefined;
+    isActiveFooterLink(href) ? { color: "#ef2f6b" } : undefined;
 
   return (
     <footer className="bg-[#08233a] text-white pb-4 pt-5">
@@ -34,7 +50,7 @@ export default function Footer() {
                 src={Logo}
                 alt="Healthcare Logo"
                 className="h-8 w-auto"
-                style={{ filter: "brightness(0) invert(1)", mixBlendMode: "screen" }}
+                // style={{ filter: "brightness(0) invert(1)", mixBlendMode: "screen" }}
               />
             </Link>
           </div>

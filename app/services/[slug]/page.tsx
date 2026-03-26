@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: `${service.title} | Digital Paradigm - Healthcare Digital Solutions`,
       description: `Health - Digital Paradigm: ${service.description}`,
-      url: `https://digitalparadigm.com/health/services/${service.slug}`,
+      url: `https://health.digitalparadigm.com/services/${service.slug}`,
       siteName: "Digital Paradigm",
       type: "website",
     },
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: `Health - Digital Paradigm: ${service.description}`,
     },
     alternates: {
-      canonical: `https://digitalparadigm.com/health/services/${service.slug}`,
+      canonical: `https://health.digitalparadigm.com/services/${service.slug}`,
     },
   };
 }
