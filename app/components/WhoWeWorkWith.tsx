@@ -17,23 +17,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const audienceItems = [
   {
-    title: "Dental Clinics",
+    title: "Medical Clinics",
     image: Img1,
   },
   {
-    title: "Physiotherapy Clinics",
+    title: "Specialists",
     image: Img2,
   },
   {
-    title: "Private Healthcare Providers",
+    title: "Dental Practices",
     image: Img3,
   },
   {
-    title: "GP Clinics",
+    title: "Allied Health Providers",
     image: Img4,
   },
   {
-    title: "HealthTech Startups",
+    title: "Cosmetic Clinics",
     image: Img5,
   },
 ];
@@ -52,7 +52,7 @@ export default function WhoWeWorkWith() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Built for Healthcare Providers
+            Built specifically for healthcare providers
           </p>
 
           <h2

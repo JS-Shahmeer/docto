@@ -214,6 +214,57 @@ img {
   mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
 }
 
+/* Swiper Hero Styles */
+.hero-swiper {
+  width: 100%;
+}
+
+.hero-swiper .swiper-slide {
+  padding: 0;
+}
+
+.hero-swiper .swiper-pagination {
+  bottom: 20px;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: #ef2f6b;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #ef2f6b;
+  opacity: 1;
+}
+
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #ef2f6b;
+  background: #edf3f8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .section-title {
   font-size: clamp(var(--title-min), var(--title-vw), var(--title-max));
   font-weight: 800;

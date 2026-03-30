@@ -2,6 +2,7 @@
 import Hero from "./components/Hero";
 import ClinicChallenges from "./components/ClinicChallenges";
 import CoreSolutions from "./components/CoreSolutions";
+import WhyChooseUs from "./components/WhyChooseUs";
 import AboutSection from "./components/AboutSection";
 import GrowthSection from "./components/GrowthSection";
 import WhoWeWorkWith from "./components/WhoWeWorkWith";
@@ -39,16 +40,17 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <CaseStudies />
-      <ClinicChallenges />
       <CoreSolutions />
+      <CaseStudies />
+      <WhoWeWorkWith />
       <AboutSection />
       <GrowthSection />
-      <WhoWeWorkWith />
-      <CTASection />
       <StatsSection />
       <ProcessSection />
+      <WhyChooseUs />
+      <ClinicChallenges />
       <FocusSection />
+      <CTASection />
     </>
   );
 }

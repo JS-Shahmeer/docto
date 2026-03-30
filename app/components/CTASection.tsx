@@ -1,5 +1,6 @@
 "use client";
 
+import { PhoneCall, RocketIcon } from "lucide-react";
 import ScrollToTopButton from "./ScrollToTopButton";
 import Link from "next/link";
 
@@ -33,9 +34,9 @@ export default function CTASection() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Best Medical &amp; Health
-              <br />
-              Care Near Your City
+              Ready to Grow Your
+              <br className="md:block hidden" />
+               Patient Bookings?
             </h2>
 
             <p
@@ -43,7 +44,7 @@ export default function CTASection() {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Experienced Healthcare Technology Specialists
+              Get a clear roadmap to attract and convert more patients — without wasting time or budget.
             </p>
 
             <div
@@ -51,22 +52,23 @@ export default function CTASection() {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <Link href="/contact">
+              <a href="https://calendly.com/digitalparadigm/product-strategy-call" target="_blank">
                 <button className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center gap-2">
-                  <span>Contact Us</span>
+                  <span>Get Free Growth Audit</span>
                   <span>|</span>
-                  <span>+</span>
+                  <span><RocketIcon size={14} /></span>
                 </button>
-              </Link>
+              </a>
 
-              <Link
-                href="/services"
+              <a
+                href="https://calendly.com/digitalparadigm/product-strategy-call"
+                target="_blank"
                 className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
               >
-                <span>Our Services</span>
+                <span>Book a Strategy Call</span>
                 <span>|</span>
-                <span>+</span>
-              </Link>
+                <span><PhoneCall size={14} /></span>
+              </a>
             </div>
           </div>
         </div>
