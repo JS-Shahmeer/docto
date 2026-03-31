@@ -149,7 +149,11 @@ export default function StatsSection() {
                 </span>
               </a>
 
-              <div className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+              <div
+                className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <h3 className="font-semibold text-gray-900 text-lg mb-2">
                   Response Time
                 </h3>
@@ -161,7 +165,7 @@ export default function StatsSection() {
           </div>
 
           <div ref={formRef} data-aos="fade-up" data-aos-delay="300">
-            <ContactForm 
+            <ContactForm
               title="Appointment"
               subtitle="Make an"
               showBookAuditButton={true}
@@ -172,5 +176,3 @@ export default function StatsSection() {
     </section>
   );
 }
-
-

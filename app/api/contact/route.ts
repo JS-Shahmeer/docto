@@ -18,11 +18,11 @@ function setCorsHeaders(response: NextResponse) {
   response.headers.set("Access-Control-Allow-Origin", origin);
   response.headers.set(
     "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, OPTIONS",
+    "GET, POST, PUT, DELETE, OPTIONS"
   );
   response.headers.set(
     "Access-Control-Allow-Headers",
-    "Content-Type, Authorization",
+    "Content-Type, Authorization"
   );
   response.headers.set("Access-Control-Allow-Credentials", "true");
   return response;
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
     if (!name || !email || !message) {
       const response = NextResponse.json(
         { error: "Name, email, and message are required." },
-        { status: 400 },
+        { status: 400 }
       );
       return setCorsHeaders(response);
     }
@@ -144,7 +144,7 @@ export async function POST(req: Request) {
 
     const response = NextResponse.json(
       { message: "Thank you for your enquiry! We will get back to you soon." },
-      { status: 200 },
+      { status: 200 }
     );
     return setCorsHeaders(response);
   } catch (error) {
@@ -155,7 +155,7 @@ export async function POST(req: Request) {
         error:
           "Something went wrong while sending your enquiry. Please try again later.",
       },
-      { status: 500 },
+      { status: 500 }
     );
     return setCorsHeaders(response);
   }

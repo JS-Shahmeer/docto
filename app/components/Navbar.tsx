@@ -98,7 +98,9 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 ${!isScrolled ? "lg:top-12" : ""} left-0 right-0 z-40 bg-white shadow-md transition-all duration-300`}
+      className={`w-full fixed top-0 ${
+        !isScrolled ? "lg:top-12" : ""
+      } left-0 right-0 z-40 bg-white shadow-md transition-all duration-300`}
     >
       <div className="flex items-center justify-between gap-6 container mx-auto md:min-h-[88px] min-h-[70px]">
         <Link href="/" className="flex items-center gap-3 min-w-[220px]">
@@ -243,7 +245,7 @@ export default function Header() {
 
             <Link
               href=""
-             className="text-slate-900 hover:text-[#ef2f6b] text-sm font-bold transition-colors"
+              className="text-slate-900 hover:text-[#ef2f6b] text-sm font-bold transition-colors"
             >
               Blogs
             </Link>
