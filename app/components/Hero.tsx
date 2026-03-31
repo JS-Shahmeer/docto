@@ -26,7 +26,6 @@ const banners = [
       "Patient Acquisition",
       "Automated Booking & Intake",
       "AI-Powered Follow-ups",
-      "Real-Time Performance Tracking",
     ],
     image: Img2,
   },

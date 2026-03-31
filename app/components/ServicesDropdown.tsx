@@ -65,16 +65,23 @@ export default function ServicesDropdown({
       onMouseLeave={onMouseLeave}
     >
       {/* Desktop Dropdown */}
-      <div className="hidden lg:grid grid-cols-3 gap-10 p-10 min-w-[900px]">
+      <div className="hidden lg:grid grid-cols-5 gap-10 p-10 w-[98vw]">
         {serviceGroups.map((group) => (
           <div key={group.category} className="flex flex-col gap-5">
-            <h3 className={`text-sm font-bold pb-3 border-b-2 ${
-              activeCategory === group.category
-                ? "text-[#ef2f6b] border-[#ef2f6b]"
-                : "text-slate-900 border-red-500"
-            }`}>
-              {group.category}
-            </h3>
+            <div className=" pb-2 border-b-2 border-[#ef2f6b]">
+              <h3 className={`text-sm font-bold ${
+                activeCategory === group.category
+                  ? "text-[#ef2f6b]"
+                  : "text-slate-900 border-red-500"
+              }`}>
+                {group.category}
+              </h3>
+              {group.positioning && (
+                <p className="text-xs text-slate-600 mt-2">
+                  {group.positioning}
+                </p>
+              )}
+            </div>
             <ul className="flex flex-col gap-4">
               {group.services.map((service) => {
                 const normalizedPathname = pathname.replace(/\/$/, '');
@@ -82,7 +89,8 @@ export default function ServicesDropdown({
                 return (
                   <li key={service.slug}>
                     <Link
-                      href={`/services/${service.slug}`}
+                      // href={`/services/${service.slug}`}
+                      href=""
                       className={`flex flex-col gap-1 transition-all group ${
                         isActive ? "opacity-100" : ""
                       }`}
@@ -119,13 +127,20 @@ export default function ServicesDropdown({
       <div className="lg:hidden flex flex-col gap-6 p-6 min-w-[280px]">
         {serviceGroups.map((group) => (
           <div key={group.category} className="flex flex-col gap-3">
-            <h3 className={`text-sm font-bold uppercase tracking-wide ${
-              activeCategory === group.category
-                ? "text-[#ef2f6b]"
-                : "text-red-500"
-            }`}>
-              {group.category}
-            </h3>
+            <div className=" pb-2 border-b-2 border-[#ef2f6b]">
+              <h3 className={`text-sm font-bold uppercase tracking-wide ${
+                activeCategory === group.category
+                  ? "text-[#ef2f6b]"
+                  : "text-red-500"
+              }`}>
+                {group.category}
+              </h3>
+              {group.positioning && (
+                <p className="text-xs text-slate-600 mt-1">
+                  {group.positioning}
+                </p>
+              )}
+            </div>
             <ul className="flex flex-col gap-2">
               {group.services.map((service) => {
                 const normalizedPathname = pathname.replace(/\/$/, '');
@@ -133,7 +148,7 @@ export default function ServicesDropdown({
                 return (
                   <li key={service.slug}>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href=""
                       className={`flex flex-col gap-1 transition-all group ${
                         isActive ? "opacity-100" : ""
                       }`}

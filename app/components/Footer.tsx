@@ -11,7 +11,7 @@ export default function Footer() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
+    { href: "/services", label: "Growth Services" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
   ];
@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-about-text">
-            Helping healthcare brands grow with clarity, trust, and strategy.
+            Helping healthcare providers grow with compliant, patient-focused systems.
           </p>
         </div>
 

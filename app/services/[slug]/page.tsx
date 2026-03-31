@@ -67,9 +67,9 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
 
             <p className="service-detail-category">{service.category}</p>
 
-            <h1 className="service-detail-title">{service.heroTitle}</h1>
+            <h1 className="service-detail-title">{service.title}</h1>
 
-            <p className="service-detail-intro">{service.intro}</p>
+            <p className="service-detail-intro">{service.description}</p>
 
             <div className="service-detail-actions">
               <button className="btn-primary">Get Started</button>
@@ -77,13 +77,15 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             </div>
           </div>
 
-          <div className="service-detail-right">
-            <img
-              src={service.image}
-              alt={service.title}
-              className="service-detail-image"
-            />
-          </div>
+          {(service as any).image && (
+            <div className="service-detail-right">
+              <img
+                src={(service as any).image}
+                alt={service.title}
+                className="service-detail-image"
+              />
+            </div>
+          )}
         </div>
       </section>
 

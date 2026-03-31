@@ -13,6 +13,7 @@ import ProcessSection from "./components/ProcessSection";
 import FocusSection from "./components/FocusSection";
 import { useGSAPAnimation } from "./hooks/useGSAPAnimation";
 import type { Metadata } from "next";
+import HomeHeroTrustBar from "./components/HomeHeroTrustBar";
 
 export const metadata: Metadata = {
   title: "Digital Paradigm | Smarter Digital Systems for Healthcare",
@@ -40,6 +41,7 @@ export default function Page() {
   return (
     <>
       <Hero />
+      <HomeHeroTrustBar />
       <CoreSolutions />
       <CaseStudies />
       <WhoWeWorkWith />
