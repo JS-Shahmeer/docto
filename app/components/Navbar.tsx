@@ -140,7 +140,7 @@ export default function Header() {
                 }`}
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
               >
-                Growth Services
+                Growth Solutions
               </Link>
               {servicesDropdownOpen && (
                 <ChevronUp
@@ -324,7 +324,7 @@ export default function Header() {
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 >
                   <Link href="/services" className="text-white">
-                    Growth Services
+                    Growth Solutions
                   </Link>
                   <span
                     className={`text-xs transition-transform ${

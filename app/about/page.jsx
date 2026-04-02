@@ -40,7 +40,7 @@ export default function AboutPage() {
               custom={0.1}
               className="about-hero-title font-bold"
             >
-              Helping healthcare brands grow with clarity, trust, and strategy
+              AI-Powered Healthcare Growth Systems
             </motion.h1>
 
             <motion.p
@@ -58,16 +58,29 @@ export default function AboutPage() {
               custom={0.3}
               className="about-hero-actions"
             >
-              <Link href="/contact" className="inline-flex items-center justify-center bg-[#ef2f6b] border border-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors">
-                Work With Us
-              </Link>
-
-              <Link href="/services" className="inline-flex items-center justify-center bg-transparent text-black hover:text-white border border-[#ef2f6b] rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors">
-                View Services
-              </Link>
+              <a
+                href="https://calendly.com/digitalparadigm/product-strategy-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <span>Get a Free Growth Audit</span>
+                <span className="hero-services-divider">|</span>
+                <span>+</span>
+              </a>
+              <a
+                href="https://calendly.com/digitalparadigm/product-strategy-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <span>Book a Strategy Call</span>
+                <span className="hero-services-divider">|</span>
+                <span>+</span>
+              </a>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               variants={fadeUp}
               custom={0.4}
               className="about-hero-stats"
@@ -92,7 +105,7 @@ export default function AboutPage() {
                   Smarter visibility and patient reach
                 </span>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           <motion.div
@@ -347,7 +360,10 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <Link href="/contact" className="inline-flex md:min-w-[180px] items-center justify-center bg-[#ef2f6b] border border-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors">
+          <Link
+            href="/contact"
+            className="inline-flex md:min-w-[180px] items-center justify-center bg-[#ef2f6b] border border-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors"
+          >
             Get In Touch
           </Link>
         </motion.div>
