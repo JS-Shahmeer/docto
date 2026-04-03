@@ -155,7 +155,7 @@ absolute -top-[30px] left-0
                 </span>
               </a>
 
-              <div
+              {/* <div
                 className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 data-aos="fade-up"
                 data-aos-delay="400"
@@ -166,7 +166,7 @@ absolute -top-[30px] left-0
                 <p className="text-gray-600 text-base">
                   Usually within 1 business day
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 

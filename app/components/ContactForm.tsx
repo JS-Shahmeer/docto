@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Swal from "sweetalert2";
-import { serviceGroups } from "../data/services";
 
 interface ContactFormProps {
   title?: string;
@@ -191,13 +190,11 @@ export default function ContactForm({
               className="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
             >
               <option value="">Select a solution</option>
-              {serviceGroups
-                .flatMap((group) => group.services)
-                .map((service) => (
-                  <option key={service.slug || service.title} value={service.title}>
-                    {service.title}
-                  </option>
-                ))}
+              <option value="Launch System">Launch System</option>
+              <option value="Growth Engine">Growth Engine</option>
+              <option value="PatientFlow AI">PatientFlow AI</option>
+              <option value="Authority Builder">Authority Builder</option>
+              <option value="Intelligence Dashboard">Intelligence Dashboard</option>
             </select>
           </div>
         </div>

@@ -7,6 +7,7 @@ import Img1 from "../../public/assets/img/aboutpage/1.webp";
 import Img2 from "../../public/assets/img/aboutpage/2.webp";
 import Img3 from "../../public/assets/img/aboutpage/3.webp";
 import Img4 from "../../public/assets/img/aboutpage/4.webp";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 34 },
@@ -80,32 +81,34 @@ export default function AboutPage() {
               </a>
             </motion.div>
 
-            {/* <motion.div
+            <motion.div
               variants={fadeUp}
               custom={0.4}
               className="about-hero-stats"
             >
               <div className="about-stat-card">
-                <span className="about-stat-number">Strategy</span>
-                <span className="about-stat-label">
-                  Built around real healthcare goals
+                <span className="about-stat-number">Step 1:</span>
+                <span className="about-stat-label font-semibold">
+                  Audit & Growth Strategy
                 </span>
               </div>
 
               <div className="about-stat-card">
-                <span className="about-stat-number">Design</span>
-                <span className="about-stat-label">
-                  Clean, trustworthy digital experiences
+                <span className="about-stat-number">Step 2:</span>
+                <span className="about-stat-label font-semibold">
+                  Build Your Growth System
                 </span>
               </div>
 
               <div className="about-stat-card">
-                <span className="about-stat-number">Growth</span>
-                <span className="about-stat-label">
-                  Smarter visibility and patient reach
+                <span className="about-stat-number">
+                  Step 3:
+                </span>
+                <span className="about-stat-label font-semibold">
+                  Optimize & Scale
                 </span>
               </div>
-            </motion.div> */}
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -246,7 +249,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-why-section">
+      {/* <section className="about-why-section">
         <div className="container about-why-grid">
           <motion.div
             initial={{ opacity: 0, y: 28 }}
@@ -288,7 +291,8 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <WhyChooseUs />
 
       <section className="about-numbers-section">
         <div className="container">
@@ -308,20 +312,16 @@ export default function AboutPage() {
           <div className="about-numbers-grid">
             {[
               {
-                number: "01",
-                label: "Understand your goals and audience",
+                number: "Step 1",
+                label: "Audit & Growth Strategy",
               },
               {
-                number: "02",
-                label: "Build a clear digital strategy",
+                number: "Step 2",
+                label: "Build Your Growth System",
               },
               {
-                number: "03",
-                label: "Create polished brand experiences",
-              },
-              {
-                number: "04",
-                label: "Refine for stronger long-term growth",
+                number: "Step 3",
+                label: "Optimize & Scale",
               },
             ].map((item, i) => (
               <motion.div
@@ -333,7 +333,7 @@ export default function AboutPage() {
                 viewport={{ once: true }}
               >
                 <span className="about-number">{item.number}</span>
-                <p>{item.label}</p>
+                <p className="font-bold">{item.label}</p>
               </motion.div>
             ))}
           </div>

@@ -8,34 +8,29 @@ import Img4 from "../../public/assets/img/homepage/16.webp";
 
 const solutions = [
   {
+    step: "01",
     title: "Launch System",
-    description: "Get initial traction.",
-    image: Img1,
-    placeholder: false,
+    description: "Get your first 50–100 patients in 60 days.",
   },
   {
+    step: "02",
     title: "Growth Engine",
-    description: "Scale patient flow.",
-    image: Img2,
-    placeholder: false,
+    description: "Consistent weekly patient bookings without relying on referrals.",
   },
   {
+    step: "03",
     title: "PatientFlow AI",
-    description: "Maximise every lead.",
-    image: Img3,
-    placeholder: false,
+    description: "Turn more inquiries into bookings automatically.",
   },
   {
+    step: "04",
     title: "Authority Builder",
-    description: "Build long-term trust.",
-    image: Img4,
-    placeholder: false,
+    description: "Become the most trusted clinic in your area.",
   },
   {
+    step: "05",
     title: "Intelligence Dashboard",
-    description: "Real-time growth visibility.",
-    image: Img2,
-    placeholder: false,
+    description: "Know exactly what's working.",
   },
 ];
 
@@ -78,39 +73,26 @@ absolute top-[40px] left-1/2 -translate-x-1/2
 
         <div className="flex md:flex-row flex-col md:flex-wrap justify-center gap-6">
           <div className="relative w-full">
-            <div className="absolute inset-x-0 top-1/2 h-[4px] w-[90%] mx-auto bg-[#ef2f6b] opacity-90 z-0" />
+            <div data-aos="fade-up" data-aos-delay="800" className="absolute inset-x-0 top-1/2 h-[4px] w-[90%] mx-auto bg-[#ef2f6b] opacity-90 z-0" />
             <div className="flex md:flex-row flex-col md:flex-wrap justify-center gap-6 relative z-10">
               {solutions.map((solution, index) => (
                 <article
                   key={solution.title}
-                  className="bg-white md:w-[18%] w-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="w-full md:w-[calc(25%-1.5rem)] bg-[#ef2f6b] hover:bg-[#f21c60] transition-all duration-300 lg:w-[calc(20%-1.2rem)] rounded-lg overflow-hidden hover:shadow-lg flex flex-col p-5"
+                 
                   data-aos="fade-up"
                   data-aos-delay={300 + index * 100}
                 >
-                  <div className="relative h-48 bg-gray-200">
-                    {solution.placeholder ? (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <div className="w-12 h-12 bg-gray-300 rounded-full" />
-                      </div>
-                    ) : (
-                      <Image
-                        src={solution.image}
-                        alt={solution.title}
-                        className="w-full h-full object-cover"
-                      />
-                    )}
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
-                      {solution.title === "Design" ? (
-                        <>Design</>
-                      ) : (
-                        solution.title
-                      )}
-                    </h3>
-
-                    <p className="text-base text-gray-600">
+                  <div className="flex flex-col h-full justify-between">
+                    <div>
+                      <p className="text-white text-sm md:text-base font-semibold mb-3 opacity-90">
+                        {solution.step}
+                      </p>
+                      <h3 className="text-white text-xl md:text-2xl font-bold mb-6">
+                        {solution.title}
+                      </h3>
+                    </div>
+                    <p className="text-white text-sm md:text-base">
                       {solution.description}
                     </p>
                   </div>

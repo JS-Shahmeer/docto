@@ -54,9 +54,9 @@ absolute -top-[30px] left-0
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              High-Converting 
+              Running a Clinic  
               <br className="md:block hidden" />
-              Pain Points 
+              is Hard Enough 
             </h2>
 
             <div className="w-24 h-1.5 bg-[#97bb67] mb-6" />
