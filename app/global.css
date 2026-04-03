@@ -5640,9 +5640,9 @@ a {
 }
 
 .service-hero-title {
-  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-size: clamp(3rem, 6vw, 3.25rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.075;
   color: #1a1a1a;
   margin-bottom: 28px;
   letter-spacing: -1px;
