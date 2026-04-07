@@ -2,12 +2,9 @@
 
 import ServiceLandingLayout from '@/app/components/ServiceLandingLayout';
 import {
-  ShieldCheck,
   CalendarCheck,
   Users,
-  Award,
-  Check,
-  MessageCircle,
+  Repeat,
 } from 'lucide-react';
 
 const faqData = [
@@ -23,10 +20,10 @@ export default function DentalClinicServicePage() {
   return (
     <ServiceLandingLayout
       hero={{
-        subtitle: 'Dental Practice',
-        title: 'Welcome To Our',
-        highlight: 'Dental Excellence',
-        description: 'Transform smiles with expert dental care. Our digital-first platform connects you with patients seeking comprehensive dental services, from preventive care to advanced restorations.',
+        subtitle: 'Dental Clinics',
+        title: 'Fill your chairs with',
+        highlight: 'a predictable flow of high-quality patients.',
+        description: 'We partner with dental clinics to build scalable patient acquisition systems that increase bookings, reduce no-shows, and drive consistent monthly revenue.',
         primaryAction: { label: 'Our Service', href: '/services' },
         secondaryAction: { label: 'See Pricing', href: '/pricing' },
         emergencyPhone: '+62 123 456 789',
@@ -35,35 +32,40 @@ export default function DentalClinicServicePage() {
       }}
       aboutBlock={{
         smallTitle: 'About Us',
-        title: "We Help Dental Practices Attract More Quality Patients",
-        description: 'Expert digital solutions designed specifically for dental clinics. From routine cleanings to cosmetic dentistry, we help you reach and convert the right patient audience.',
-        attributes: [
-          { title: 'Dental SEO', text: 'Rank for searches like "dentist near me" and specific dental services' },
-          { title: 'Treatment Education', text: 'Build patient trust with detailed procedure explainers and before/after galleries' },
-        ],
+        title: "CORE POSITIONING",
+        description: 'Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.',
         imageSrc: '/assets/img/services-page/moving/about-image.jpg',
         imageAlt: 'Dental practice about',
       }}
       featureBlock={{
-        heading: 'What We Do for Dental Clinics',
-        description: 'A proven structure built for the dental audience: from first impression to appointment confirmation.',
+        heading: 'Our Approach',
+        description: 'We build and optimise three core growth engines inside your practice:',
         features: [
-          { icon: <ShieldCheck size={32} className="text-[#ef2f6b]" />, title: 'HIPAA-Aware UX', text: 'Secure forms, encrypted data flow, and compliance considerations at every step.' },
-          { icon: <CalendarCheck size={32} className="text-[#ef2f6b]" />, title: 'Smart Booking Funnels', text: 'Simplified appointment flow with dynamic prompts, reminders, and conversion checkpoints.' },
-          { icon: <Users size={32} className="text-[#ef2f6b]" />, title: 'Local Patient Acquisition', text: 'SEO, local listings, and paid campaigns to capture nearby patients and grow your practice.' },
-          { icon: <Award size={32} className="text-[#ef2f6b]" />, title: 'Reputation Management', text: 'Automated review requests and social proof modules to build trust and retention.' },
-          { icon: <Check size={32} className="text-[#ef2f6b]" />, title: 'Treatment-Focused Pages', text: 'Personalized landing pages for implants, orthodontics, cleaning, and cosmetic services.' },
-          { icon: <MessageCircle size={32} className="text-[#ef2f6b]" />, title: 'Follow-up Automation', text: 'SMS/email workflows for confirmations, reminders, feedback and repeat visits.' },
+          {
+            icon: <Users size={32} className="text-[#ef2f6b]" />,
+            title: 'Patient Acquisition',
+            text: 'We position your clinic where high-intent patients are already searching through: Google search optimisation, Paid advertising campaigns, Local visibility strategies.',
+          },
+          {
+            icon: <CalendarCheck size={32} className="text-[#ef2f6b]" />,
+            title: 'Conversion Systems',
+            text: 'We turn enquiries into booked appointments by improving: website and landing page performance, call handling and enquiry response, automated follow-ups and reminders.',
+          },
+          {
+            icon: <Repeat size={32} className="text-[#ef2f6b]" />,
+            title: 'Retention & Reactivation',
+            text: 'We help you maximise patient lifetime value through: recall systems, reactivation campaigns, ongoing engagement strategies.',
+          },
         ],
       }}
       statsBlock={{
-        heading: 'Performance Metrics You Can Expect',
-        description: 'Delivered metrics from clinics we support — benchmark your growth with clear digital KPIs.',
+        heading: 'OUTCOMES',
+        description: 'Our systems are designed to help you:',
         stats: [
-          { value: '35%+', label: 'Increase in appointment requests' },
-          { value: '40%+', label: 'Improvement in local leads' },
-          { value: '1.8x', label: 'Higher conversion rate from traffic' },
-          { value: '20%+', label: 'Lower bounce rate on mobile' },
+          { value: 'Steady flow', label: 'of qualified enquiries' },
+          { value: 'Higher conversion', label: 'from enquiry to booking' },
+          { value: 'Fewer missed', label: 'opportunities and no-shows' },
+          { value: 'Predictable growth', label: 'and a scalable revenue pipeline' },
         ],
       }}
       processBlock={{

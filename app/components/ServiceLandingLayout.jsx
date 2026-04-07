@@ -11,7 +11,7 @@ function HeroSection({ title, subtitle, highlight, description, primaryAction, s
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 px-4 md:px-8 items-center">
         <div data-aos="fade-right" className="space-y-6">
           <p className="text-xs md:text-sm uppercase tracking-widest text-[#ef2f6b] font-semibold">{subtitle}</p>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight md:leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight md:leading-tight">
             {title}
             <br />
             <span className="text-[#ef2f6b] underline decoration-4 decoration-[#ef2f6b] underline-offset-4">{highlight}</span>
@@ -62,7 +62,8 @@ function HeroSection({ title, subtitle, highlight, description, primaryAction, s
   );
 }
 
-function AboutSection({ smallTitle, title, description, attributes, imageSrc, imageAlt }) {
+// function AboutSection({ smallTitle, title, description, attributes, imageSrc, imageAlt }) {
+function AboutSection({ smallTitle, title, description, imageSrc, imageAlt }) {
   return (
     <section className="bg-white py-14 md:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 px-4 md:px-8 items-center">
@@ -81,14 +82,14 @@ function AboutSection({ smallTitle, title, description, attributes, imageSrc, im
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">{title}</h2>
           <p className="text-base md:text-lg text-slate-600 max-w-2xl">{description}</p>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          {/* <div className="grid gap-4 sm:grid-cols-2">
             {attributes.map((attr) => (
               <div key={attr.title} className="bg-slate-50 border border-slate-200 rounded-2xl p-4 hover:border-[#ef2f6b] transition">
                 <h3 className="text-base font-semibold text-slate-900 mb-1">{attr.title}</h3>
                 <p className="text-sm text-slate-500">{attr.text}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
@@ -129,7 +130,7 @@ function StatsSection({ stats, heading, description }) {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="bg-slate-50 rounded-2xl p-6 text-center">
-              <p className="text-3xl md:text-4xl font-extrabold text-[#ef2f6b]">{stat.value}</p>
+              <p className="text-2xl font-extrabold text-[#ef2f6b]">{stat.value}</p>
               <p className="mt-2 text-sm md:text-base text-slate-600">{stat.label}</p>
             </div>
           ))}

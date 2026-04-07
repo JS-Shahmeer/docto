@@ -17,23 +17,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const audienceItems = [
   {
-    title: "Launch System",
+    title: "Dental Clinics",
     image: Img1,
   },
   {
-    title: "Growth Engine",
+    title: "Physiotherapists Clinics",
     image: Img2,
   },
   {
-    title: "PatientFlow AI",
+    title: "Orthodontists",
     image: Img3,
   },
   {
-    title: "Authority Builder",
+    title: "Skin clinics",
     image: Img4,
   },
   {
-    title: "Intelligence Dashboard",
+    title: "Cosmetic clinics",
     image: Img5,
   },
 ];

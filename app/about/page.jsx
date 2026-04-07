@@ -7,7 +7,10 @@ import Img1 from "../../public/assets/img/aboutpage/1.webp";
 import Img2 from "../../public/assets/img/aboutpage/2.webp";
 import Img3 from "../../public/assets/img/aboutpage/3.webp";
 import Img4 from "../../public/assets/img/aboutpage/4.webp";
-import WhyChooseUs from "../components/WhyChooseUs";
+import ImgWhyChooseUs from "../../public/assets/img/homepage/whychooseus.webp";
+import ImgPhilosophy from "../../public/assets/img/aboutpage/philosopy-section.webp";
+import { Check, Dot } from "lucide-react";
+import WhoWeWorkWith from "../components/WhoWeWorkWith";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 34 },
@@ -32,7 +35,7 @@ export default function AboutPage() {
 
         <div className="container about-hero-grid">
           <motion.div initial="hidden" animate="show">
-            <motion.p variants={fadeUp} custom={0} className="about-hero-label">
+            <motion.p variants={fadeUp} custom={0} className="about-hero-label" style={{color: "#ef2f6b"}}>
               Modern Digital Growth for Healthcare
             </motion.p>
 
@@ -44,15 +47,31 @@ export default function AboutPage() {
               AI-Powered Healthcare Growth Systems
             </motion.h1>
 
-            <motion.p
+            <motion.div
               variants={fadeUp}
               custom={0.2}
               className="about-hero-text"
             >
-              We help clinics, healthcare providers, and medical brands build a
-              stronger digital presence through thoughtful strategy, clean
-              design, and marketing systems that support long-term growth.
-            </motion.p>
+              <p className="text-black">We help healthcare providers:</p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center gap-1">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="capitalize">attract high-intent patients</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="capitalize">convert more enquiries into bookings</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="capitalize">reduce no-shows and drop-offs</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="capitalize">build predictable revenue pipelines</span>
+                </li>
+              </ul>
+            </motion.div>
 
             <motion.div
               variants={fadeUp}
@@ -101,9 +120,7 @@ export default function AboutPage() {
               </div>
 
               <div className="about-stat-card">
-                <span className="about-stat-number">
-                  Step 3:
-                </span>
+                <span className="about-stat-number">Step 3:</span>
                 <span className="about-stat-label font-semibold">
                   Optimize & Scale
                 </span>
@@ -164,27 +181,34 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             <p>
-              We believe healthcare businesses deserve digital solutions that
-              feel clear, professional, and human. In a space built on trust,
-              your online presence should reflect the same confidence and care
-              that patients expect in person.
+              We believe healthcare businesses deserve digital systems that feel
+              clear, professional, and human — because in a space built on
+              trust, your patient experience should begin long before they walk
+              through your doors.
             </p>
 
             <p>
-              Our work combines strategy, creativity, and performance to help
-              healthcare providers strengthen visibility, improve brand
-              perception, and build digital systems that support real business
-              growth.
+              That’s why we partner with healthcare practices to build
+              predictable, scalable patient growth systems.
             </p>
 
             <p>
-              From SEO and paid campaigns to web design and digital branding, we
-              focus on creating solutions that feel polished, practical, and
-              aligned with your long-term goals.
+              Unlike traditional marketing agencies or fragmented vendors, we
+              focus on one outcome: consistent patient acquisition and
+              sustainable revenue growth.
+            </p>
+            <p>
+              Our work combines strategy, technology, and automation to install
+              end-to-end growth systems inside your practice — covering
+              visibility, conversion, and retention — while ensuring your brand
+              continues to reflect the confidence, care, and professionalism
+              patients expect.
             </p>
           </motion.div>
         </div>
       </section>
+
+      <WhoWeWorkWith />
 
       <section className="about-values-section">
         <div className="container">
@@ -249,50 +273,141 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* <section className="about-why-section">
-        <div className="container about-why-grid">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+      <section className="relative py-16 md:py-24 bg-white" id="why-choose-us">
+        <h3
+          className="
+pointer-events-none max-w-full overflow-hidden
+tracking-[-4px] whitespace-nowrap text-slate-200 opacity-75 z-[1]
+text-[clamp(60px,10vw,90px)] font-extrabold
+absolute top-[70px] left-1/2 -translate-x-1/2
+[mask-image:linear-gradient(#000_40%,#0000_100%)]
+[-webkit-mask-image:linear-gradient(#000_40%,#0000_100%)]
+"
+        >
+          What Makes Us Different
+        </h3>
+        <div className="container mx-auto px-4 relative z-[2]">
+          <div
+            className="text-center mb-12"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
-            <p className="about-section-subtitle">Why Choose Us</p>
-            <h2 className="about-section-title font-semibold">
-              Strategy, creativity, and healthcare-focused digital thinking
-            </h2>
-            <p className="about-section-text">
-              We understand that healthcare marketing needs more than just good
-              visuals. It needs trust, strong communication, and a digital
-              experience that makes patients feel confident from the very first
-              interaction.
+            <p className="text-[#ef2f6b] font-semibold text-base md:text-lg">
+              Differentiation
             </p>
-          </motion.div>
+            <h2 className="text-black md:text-5xl text-3xl font-extrabold mt-3">
+              What Makes Us Different
+            </h2>
+            <div className="mx-auto mt-4 w-20 h-1.5 bg-[#97bb67]" />
+          </div>
 
-          <div className="about-why-points">
-            {[
-              "Healthcare-focused digital strategy",
-              "Clean, premium, and trustworthy design direction",
-              "Growth-driven marketing across SEO, PPC, and social media",
-              "Consistent branding across every patient touchpoint",
-              "Practical solutions tailored to long-term business goals",
-            ].map((text, i) => (
-              <motion.div
-                key={text}
-                className="about-why-point"
-                initial={{ opacity: 0, y: 22 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.08, duration: 0.55 }}
-                viewport={{ once: true }}
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:items-center gap-8">
+            <div className="flex flex-col gap-6 relative h-max">
+              <div
+                className="bg-gradient-to-br relative from-pink-50 to-pink-100 border border-pink-200 rounded-xl p-6 md:py-10 shadow-md hover:shadow-lg transition-shadow duration-300 flex-1"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
-                <span className="about-why-dot" />
-                <p>{text}</p>
-              </motion.div>
-            ))}
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  Most healthcare businesses struggle with:
+                </h3>
+                <ul className="space-y-3 text-gray-700 text-base md:text-lg md:my-6 my-4">
+                  <li className="flex items-start">
+                    <span className="text-[#ef2f6b] font-bold text-xl">
+                      <Dot size={28} />
+                    </span>
+                    <span>Inconsistent Patient Flow</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#ef2f6b] font-bold text-xl">
+                      <Dot size={28} />
+                    </span>
+                    <span>Poor Lead Conversion</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#ef2f6b] font-bold text-xl">
+                      <Dot size={28} />
+                    </span>
+                    <span>Lack of Visibility into Growth Performance</span>
+                  </li>
+                </ul>
+                <p className=" text-black text-base md:text-lg mt-4">
+                  We solve this by building integrated growth infrastructure,
+                  not just running campaigns.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="flex items-center justify-center relative"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <Image
+                src={ImgWhyChooseUs}
+                alt="Why choose us in healthcare marketing"
+                className="object-contain w-full h-full max-h-[500px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={false}
+              />
+            </div>
           </div>
         </div>
-      </section> */}
-      <WhyChooseUs />
+      </section>
+
+      <section className="about-philosophy-section py-16 md:py-24 bg-[#f8fbfd]">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <p className="about-section-subtitle">Our Philosophy</p>
+              <h2 className="about-section-title font-semibold mb-4">
+                Growth should not depend on luck, referrals, or inconsistent marketing.
+              </h2>
+              <p className="text-base leading-7 text-slate-700 mb-6">
+                It should be:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-lg font-bold">Measurable</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-lg font-bold">Repeatable</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-lg font-bold">Systemised</span>
+                </li>
+              </ul>
+              <p className="text-base md:text-lg font-semibold leading-7 text-slate-700 mt-6">
+                That’s what we build. 
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src={ImgPhilosophy}
+                alt="Our Philosophy"
+                className="object-contain w-full h-auto max-h-[500px]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={false}
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       <section className="about-numbers-section">
         <div className="container">
@@ -307,6 +422,12 @@ export default function AboutPage() {
             <h2 className="about-section-title font-semibold">
               Built around visibility, trust, and digital growth
             </h2>
+            <p className="about-section-text mt-4 max-w-3xl text-base leading-7 text-slate-700">
+              We take full ownership of your growth by designing a tailored
+              strategy, implementing the right systems, tracking performance in
+              real time, and continuously optimizing every component to maximize
+              ROI.
+            </p>
           </motion.div>
 
           <div className="about-numbers-grid">
