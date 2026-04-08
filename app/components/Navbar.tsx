@@ -250,12 +250,12 @@ export default function Header() {
               About Us
             </Link>
 
-            <Link
+            {/* <Link
               href=""
               className="text-slate-900 hover:text-[#ef2f6b] xl:text-sm text-[11px] font-bold transition-colors"
             >
               Blogs
-            </Link>
+            </Link> */}
           </nav>
 
           <Link
