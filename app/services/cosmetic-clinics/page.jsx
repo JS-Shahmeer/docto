@@ -1,11 +1,7 @@
 "use client";
 
 import ServiceLandingLayout from "@/app/components/ServiceLandingLayout";
-import {
-  CalendarCheck,
-  Users,
-  Repeat,
-} from 'lucide-react';
+import { CalendarCheck, Users, Repeat } from "lucide-react";
 
 const faqData = [
   {
@@ -81,48 +77,49 @@ export default function CosmeticClinicsServicePage() {
         ],
       }}
       statsBlock={{
-        heading: 'OUTCOMES',
-        description: 'Our systems are designed to help you:',
+        heading: "OUTCOMES",
+        description: "Our systems are designed to help you:",
         stats: [
-          { value: 'Steady flow', label: 'of qualified enquiries' },
-          { value: 'Higher conversion', label: 'from enquiry to booking' },
-          { value: 'Fewer missed', label: 'opportunities and no-shows' },
-          { value: 'Predictable growth', label: 'and a scalable revenue pipeline' },
+          { value: "Steady flow", label: "of qualified enquiries" },
+          { value: "Higher conversion", label: "from enquiry to booking" },
+          { value: "Fewer missed", label: "opportunities and no-shows" },
+          {
+            value: "Predictable growth",
+            label: "and a scalable revenue pipeline",
+          },
         ],
       }}
       processBlock={{
-        sectionSubtitle: "Our Commitment",
-        sectionTitle:
-          "We Partner With You To Build A Luxury Digital Cosmetic Presence",
+        sectionTitle: "Attract High-Paying Cosmetic Clients",
         sectionDescription:
-          "From initial inquiry to follow-up consultations, our platform helps you attract discerning patients. We specialize in showcasing your expertise, building trust, and driving premium consultation bookings.",
+          "Cosmetic clinics need trust, positioning, and premium perception.",
+        sectionSubheading: "We help you:",
+        items: [
+          "Attract high-intent, high-value clients",
+          "Reduce low-quality or price-shopping leads",
+          "Increase booking rates for treatments and packages",
+        ],
         mainImageSrc:
           "/assets/img/services-page/cosmetic-clinics/process-main.jpg",
         mainImageAlt: "Cosmetic clinic process",
-        rightDescription:
-          "Every element exudes luxury and professionalism. Crystal-clear treatment information, stunning visual galleries, and personalized communication create an upscale experience that converts.",
-        cardTitle: "Beauty Excellence",
-        cardText:
-          "Complete digital ecosystem for premium patient acquisition, education, and retention in cosmetics.",
-        cardImageSrc:
-          "/assets/img/services-page/cosmetic-clinics/process-side.jpg",
-        cardImageAlt: "Cosmetic results",
       }}
       infoBlock={{
-        topTitle: "LUXURY EXPERTISE",
-        heading: "We Understand The Aesthetic & Premium Market",
-        leftTitle: "Our Approach",
-        leftText:
-          "Cosmetic patients seek excellence, expertise, and discretion. They research extensively, compare providers, and expect a luxury experience from first click to final result. Our platform delivers all of that — professional, sophisticated, results-driven.",
-        centerImageSrc:
-          "/assets/img/services-page/cosmetic-clinics/info-center.jpg",
-        centerImageAlt: "Our approach",
+        topTitle: "WHY US",
+        heading: "We are not a traditional marketing agency.",
+        leftTitle: "What We Don't Do",
+        leftItems: [
+          "We don't just run campaigns",
+          "We don't operate in silos",
+          "We don't focus on vanity metrics",
+        ],
+        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageAlt: "Why choose us",
         quote:
-          "Partner with us to showcase your cosmetic expertise and attract the premium patients your clinic deserves.",
+          "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",
         features: [
-          "Luxury Design Aesthetic",
-          "Before/After Gallery",
-          "VIP Communication",
+          "Measurable Results",
+          "Continuous Optimisation",
+          "Real Business Outcomes",
         ],
       }}
       faqBlock={{

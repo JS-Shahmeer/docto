@@ -1,11 +1,7 @@
 "use client";
 
 import ServiceLandingLayout from "@/app/components/ServiceLandingLayout";
-import {
-  CalendarCheck,
-  Users,
-  Repeat,
-} from 'lucide-react';
+import { CalendarCheck, Users, Repeat } from "lucide-react";
 
 const faqData = [
   {
@@ -81,48 +77,49 @@ export default function PhysiotherapyClinicsServicePage() {
         ],
       }}
       statsBlock={{
-        heading: 'OUTCOMES',
-        description: 'Our systems are designed to help you:',
+        heading: "OUTCOMES",
+        description: "Our systems are designed to help you:",
         stats: [
-          { value: 'Steady flow', label: 'of qualified enquiries' },
-          { value: 'Higher conversion', label: 'from enquiry to booking' },
-          { value: 'Fewer missed', label: 'opportunities and no-shows' },
-          { value: 'Predictable growth', label: 'and a scalable revenue pipeline' },
+          { value: "Steady flow", label: "of qualified enquiries" },
+          { value: "Higher conversion", label: "from enquiry to booking" },
+          { value: "Fewer missed", label: "opportunities and no-shows" },
+          {
+            value: "Predictable growth",
+            label: "and a scalable revenue pipeline",
+          },
         ],
       }}
       processBlock={{
-        sectionSubtitle: "Our Partnership",
-        sectionTitle:
-          "We Help You Build A Digital-First Physiotherapy Practice",
+        sectionTitle: "Turn One-Time Visits into Loyal Patients",
         sectionDescription:
-          "From initial injury assessment to recovery milestones and wellness maintenance, our platform attracts committed patients. We specialize in explaining recovery pathways, building trust, and driving patient adherence.",
+          "Physio clinics often struggle with gaps in appointment schedules.",
+        sectionSubheading: "We help you:",
+        items: [
+          "Maintain consistent patient flow",
+          "Improve rebooking rates",
+          "Maximise practitioner utilisation",
+        ],
         mainImageSrc:
           "/assets/img/services-page/physiotherapy-clinics/process-main.jpg",
         mainImageAlt: "Physiotherapy assessment",
-        rightDescription:
-          "Every element supports the recovery journey. Clear condition explanations, treatment timelines, exercise libraries, and progress tracking create a complete digital rehabilitation ecosystem.",
-        cardTitle: "Recovery Excellence",
-        cardText:
-          "Complete digital ecosystem for patient acquisition, education, and retention in physiotherapy.",
-        cardImageSrc:
-          "/assets/img/services-page/physiotherapy-clinics/process-side.jpg",
-        cardImageAlt: "Recovery treatment",
       }}
       infoBlock={{
-        topTitle: "REHABILITATION EXPERTISE",
-        heading: "We Understand The Needs Of Physiotherapy Practices",
-        leftTitle: "Our Approach",
-        leftText:
-          "Physiotherapy patients are motivated by specific recovery goals. Whether recovering from injury, surgery, or chronic pain, they need reassurance about the recovery pathway and confidence in your expertise. Our platform delivers evidence-based communication, progress visualization, and outcome-focused messaging.",
-        centerImageSrc:
-          "/assets/img/services-page/physiotherapy-clinics/info-center.jpg",
-        centerImageAlt: "Our rehabilitation approach",
+        topTitle: "WHY US",
+        heading: "We are not a traditional marketing agency.",
+        leftTitle: "What We Don't Do",
+        leftItems: [
+          "We don't just run campaigns",
+          "We don't operate in silos",
+          "We don't focus on vanity metrics",
+        ],
+        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageAlt: "Why choose us",
         quote:
-          "Partner with us to build a digital presence that inspires patient confidence and drives recovery-focused appointments.",
+          "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",
         features: [
-          "HIPAA Compliance",
-          "Recovery Pathways",
-          "Progress Tracking",
+          "Measurable Results",
+          "Continuous Optimisation",
+          "Real Business Outcomes",
         ],
       }}
       faqBlock={{

@@ -90,36 +90,30 @@ export default function SkinClinicsServicePage() {
         ],
       }}
       processBlock={{
-        sectionSubtitle: "Our Partnership",
-        sectionTitle: "We Help You Build A Digital-First Dermatology Practice",
-        sectionDescription:
-          "From patient education to treatment consultation and follow-up, our platform attracts informed patients. We specialize in explaining complex skin conditions, showcasing treatment options, and building patient loyalty.",
+        sectionTitle: "Consistent Flow of Skin Care Clients",
+        sectionDescription: "Skin clinics thrive on repeat business and long-term relationships.",
+        sectionSubheading: "We help you:",
+        items: [
+          "Increase client retention",
+          "Drive repeat bookings and treatment plans",
+          "Position your clinic as a trusted local authority",
+        ],
         mainImageSrc: "/assets/img/services-page/skin-clinics/process-main.jpg",
         mainImageAlt: "Dermatology team",
-        rightDescription:
-          "Every element is designed for patient education and trust-building. Clear condition explanations, treatment comparisons, and personalized care pathways make patients feel informed and confident.",
-        cardTitle: "Skin Solutions",
-        cardText:
-          "Complete digital ecosystem for patient acquisition, education, and retention in dermatology.",
-        cardImageSrc: "/assets/img/services-page/skin-clinics/process-side.jpg",
-        cardImageAlt: "Skin care treatment",
       }}
       infoBlock={{
-        topTitle: "DERMATOLOGY EXPERTISE",
-        heading: "We Understand The Unique Needs Of Skin Care Practices",
-        leftTitle: "Our Approach",
-        leftText:
-          "Dermatology patients need education and reassurance. Whether seeking treatment for a condition or cosmetic skin enhancement, they need clear information about options and outcomes. Our platform provides exactly that — expert education, compassionate communication, and conversion-focused design.",
-        centerImageSrc:
-          "/assets/img/services-page/skin-clinics/info-center.jpg",
-        centerImageAlt: "Our dermatology approach",
-        quote:
-          "Partner with us to build a digital presence that educates patients and drives consistent dermatology appointments.",
-        features: [
-          "HIPAA Compliance",
-          "Condition Education",
-          "Multi-Treatment Options",
+        topTitle: 'WHY US',
+        heading: 'We are not a traditional marketing agency.',
+        leftTitle: 'What We Don\'t Do',
+        leftItems: [
+          'We don\'t just run campaigns',
+          'We don\'t operate in silos',
+          'We don\'t focus on vanity metrics',
         ],
+        centerImageSrc: '/assets/img/services-page/moving/info-center.jpg',
+        centerImageAlt: 'Why choose us',
+        quote: 'Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.',
+        features: ['Measurable Results', 'Continuous Optimisation', 'Real Business Outcomes'],
       }}
       faqBlock={{
         heading: "Frequently Asked Questions",

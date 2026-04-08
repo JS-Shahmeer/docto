@@ -1,11 +1,7 @@
 "use client";
 
 import ServiceLandingLayout from "@/app/components/ServiceLandingLayout";
-import {
-  CalendarCheck,
-  Users,
-  Repeat,
-} from 'lucide-react';
+import { CalendarCheck, Users, Repeat } from "lucide-react";
 
 const faqData = [
   {
@@ -81,48 +77,49 @@ export default function OrthodontistsServicePage() {
         ],
       }}
       statsBlock={{
-        heading: 'OUTCOMES',
-        description: 'Our systems are designed to help you:',
+        heading: "OUTCOMES",
+        description: "Our systems are designed to help you:",
         stats: [
-          { value: 'Steady flow', label: 'of qualified enquiries' },
-          { value: 'Higher conversion', label: 'from enquiry to booking' },
-          { value: 'Fewer missed', label: 'opportunities and no-shows' },
-          { value: 'Predictable growth', label: 'and a scalable revenue pipeline' },
+          { value: "Steady flow", label: "of qualified enquiries" },
+          { value: "Higher conversion", label: "from enquiry to booking" },
+          { value: "Fewer missed", label: "opportunities and no-shows" },
+          {
+            value: "Predictable growth",
+            label: "and a scalable revenue pipeline",
+          },
         ],
       }}
       processBlock={{
-        sectionSubtitle: "Our Commitment",
-        sectionTitle:
-          "We Partner With You To Build A Digital-First Orthodontic Practice",
+        sectionTitle: "Get More Braces Patients Ready to Start",
         sectionDescription:
-          "From initial consultation to treatment completion, our platform helps you attract, convert, and retain smile-conscious patients. We specialize in showcasing your expertise, building trust, and driving consistent growth.",
+          "Orthodontic growth depends on high-value case acquisition, not volume.",
+        sectionSubheading: "We help you:",
+        items: [
+          "Generate qualified consultation bookings",
+          "Attract ideal patients (Invisalign, braces, long-term plans)",
+          "Improve consultation-to-treatment conversion",
+        ],
         mainImageSrc:
           "/assets/img/services-page/orthodontists/process-main.jpg",
         mainImageAlt: "Orthodontic team in action",
-        rightDescription:
-          "Every element is designed for the orthodontic journey — clear aligner education, braces explainers, and treatment timeline visualization. We make complex information simple, so patients choose you.",
-        cardTitle: "Smile Solutions",
-        cardText:
-          "Complete digital ecosystem for patient acquisition, education, and retention in orthodontics.",
-        cardImageSrc:
-          "/assets/img/services-page/orthodontists/process-side.jpg",
-        cardImageAlt: "Smile transformation",
       }}
       infoBlock={{
-        topTitle: "PROVEN EXPERTISE",
-        heading: "We Understand The Unique Needs Of Orthodontic Practices",
-        leftTitle: "Our Approach",
-        leftText:
-          "Orthodontics requires education and trust-building. Families need to understand treatment options, timelines, and costs before committing. Our digital-first strategy showcases your expertise, educates patients, and converts inquisitive visitors into appointments.",
-        centerImageSrc:
-          "/assets/img/services-page/orthodontists/info-center.jpg",
-        centerImageAlt: "Our approach",
+        topTitle: "WHY US",
+        heading: "We are not a traditional marketing agency.",
+        leftTitle: "What We Don't Do",
+        leftItems: [
+          "We don't just run campaigns",
+          "We don't operate in silos",
+          "We don't focus on vanity metrics",
+        ],
+        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageAlt: "Why choose us",
         quote:
-          "Partner with us to build a digital presence that attracts smile-ready patients and keeps them engaged throughout treatment.",
+          "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",
         features: [
-          "HIPAA Compliance",
-          "Treatment Explainers",
-          "Multi-Channel Campaigns",
+          "Measurable Results",
+          "Continuous Optimisation",
+          "Real Business Outcomes",
         ],
       }}
       faqBlock={{

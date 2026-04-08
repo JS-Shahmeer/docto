@@ -5,6 +5,7 @@ import {
   CalendarCheck,
   Users,
   Repeat,
+  Dot,
 } from 'lucide-react';
 
 const faqData = [
@@ -69,26 +70,30 @@ export default function DentalClinicServicePage() {
         ],
       }}
       processBlock={{
-        sectionSubtitle: 'Great Team Moving',
-        sectionTitle: 'Our Team Of Experienced Movers Can Handle Every Aspect Of Your Move',
-        sectionDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        sectionTitle: 'Fill More Dental Appointments with Ready Patients',
+        sectionDescription: 'Most dental clinics rely heavily on referrals or inconsistent marketing.',
+        sectionSubheading: 'We help you:',
+        items: [
+          'Attract high-value treatments (implants, cosmetic, Invisalign)',
+          'Reduce empty chair time',
+          'Improve patient conversion at reception level',
+        ],
         mainImageSrc: '/assets/img/services-page/moving/process-main.jpg',
-        mainImageAlt: 'Moving crew in action',
-        rightDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        cardTitle: 'Best Choicing',
-        cardText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        cardImageSrc: '/assets/img/services-page/moving/process-side.jpg',
-        cardImageAlt: 'Moving equipment',
+        mainImageAlt: 'Dental appointments',
       }}
       infoBlock={{
-        topTitle: 'WE ARE PROFESSIONALS',
-        heading: 'At Our Moving Company, We Understand That Every Move Is Unique',
-        leftTitle: 'Our Vision',
-        leftText: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.',
+        topTitle: 'WHY US',
+        heading: 'We are not a traditional marketing agency.',
+        leftTitle: 'What We Don\'t Do',
+        leftItems: [
+          'We don\'t just run campaigns',
+          'We don\'t operate in silos',
+          'We don\'t focus on vanity metrics',
+        ],
         centerImageSrc: '/assets/img/services-page/moving/info-center.jpg',
-        centerImageAlt: 'Our mission',
-        quote: 'Lorem ipsum dolor sit amet consectetur labore et dolore',
-        features: ['Insurance Included', 'Best Moving Transportation', '24 Hours Support'],
+        centerImageAlt: 'Why choose us',
+        quote: 'Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.',
+        features: ['Measurable Results', 'Continuous Optimisation', 'Real Business Outcomes'],
       }}
       faqBlock={{
         heading: 'Frequently Asked Questions',
