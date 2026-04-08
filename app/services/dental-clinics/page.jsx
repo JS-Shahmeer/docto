@@ -27,15 +27,15 @@ export default function DentalClinicServicePage() {
         description: 'We partner with dental clinics to build scalable patient acquisition systems that increase bookings, reduce no-shows, and drive consistent monthly revenue.',
         primaryAction: { label: 'Our Service', href: '/services' },
         secondaryAction: { label: 'See Pricing', href: '/pricing' },
-        emergencyPhone: '+62 123 456 789',
-        imageSrc: '/assets/img/services-page/moving/hero-placeholder.png',
+        emergencyPhone: '+612-5119-4369',
+        imageSrc: '/assets/img/who-we-work-with/1.webp',
         imageAlt: 'Dental service hero',
       }}
       aboutBlock={{
         smallTitle: 'About Us',
         title: "CORE POSITIONING",
-        description: 'Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.',
-        imageSrc: '/assets/img/services-page/moving/about-image.jpg',
+        description: 'Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.',
+        imageSrc: '/assets/img/who-we-work-with/2.webp',
         imageAlt: 'Dental practice about',
       }}
       featureBlock={{
@@ -78,7 +78,7 @@ export default function DentalClinicServicePage() {
           'Reduce empty chair time',
           'Improve patient conversion at reception level',
         ],
-        mainImageSrc: '/assets/img/services-page/moving/process-main.jpg',
+        mainImageSrc: '/assets/img/who-we-work-with/3.webp',
         mainImageAlt: 'Dental appointments',
       }}
       infoBlock={{
@@ -90,7 +90,7 @@ export default function DentalClinicServicePage() {
           'We don\'t operate in silos',
           'We don\'t focus on vanity metrics',
         ],
-        centerImageSrc: '/assets/img/services-page/moving/info-center.jpg',
+        centerImageSrc: '/assets/img/who-we-work-with/4.webp',
         centerImageAlt: 'Why choose us',
         quote: 'Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.',
         features: ['Measurable Results', 'Continuous Optimisation', 'Real Business Outcomes'],

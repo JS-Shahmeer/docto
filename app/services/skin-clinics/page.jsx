@@ -45,17 +45,17 @@ export default function SkinClinicsServicePage() {
           "We help skin clinics attract the right clients, increase repeat visits, and build predictable revenue systems.",
         primaryAction: { label: "Our Service", href: "/services" },
         secondaryAction: { label: "See Pricing", href: "/pricing" },
-        emergencyPhone: "+62 123 456 789",
-        imageSrc: "/assets/img/services-page/skin-clinics/hero-placeholder.png",
+        emergencyPhone: "+612-5119-4369",
+        imageSrc: "/assets/img/who-we-work-with/13.webp",
         imageAlt: "Dermatology clinic hero",
       }}
       aboutBlock={{
         smallTitle: "About Us",
         title: "CORE POSITIONING",
         description:
-          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.",
-        imageSrc: "/assets/img/services-page/moving/about-image.jpg",
-        imageAlt: "Dental practice about",
+          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.",
+        imageSrc: "/assets/img/who-we-work-with/14.webp",
+        imageAlt: "Dermatology clinic about",
       }}
       featureBlock={{
         heading: "Our Approach",
@@ -98,7 +98,7 @@ export default function SkinClinicsServicePage() {
           "Drive repeat bookings and treatment plans",
           "Position your clinic as a trusted local authority",
         ],
-        mainImageSrc: "/assets/img/services-page/skin-clinics/process-main.jpg",
+        mainImageSrc: "/assets/img/who-we-work-with/15.webp",
         mainImageAlt: "Dermatology team",
       }}
       infoBlock={{
@@ -110,7 +110,7 @@ export default function SkinClinicsServicePage() {
           'We don\'t operate in silos',
           'We don\'t focus on vanity metrics',
         ],
-        centerImageSrc: '/assets/img/services-page/moving/info-center.jpg',
+        centerImageSrc: '/assets/img/who-we-work-with/16.webp',
         centerImageAlt: 'Why choose us',
         quote: 'Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.',
         features: ['Measurable Results', 'Continuous Optimisation', 'Real Business Outcomes'],

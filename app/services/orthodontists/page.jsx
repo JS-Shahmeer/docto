@@ -41,17 +41,17 @@ export default function OrthodontistsServicePage() {
           "We help orthodontic practices build growth systems that generate qualified consultations and convert them into long-term treatment plans.",
         primaryAction: { label: "Our Service", href: "/services" },
         secondaryAction: { label: "See Pricing", href: "/pricing" },
-        emergencyPhone: "+62 123 456 789",
+        emergencyPhone: "+612-5119-4369",
         imageSrc:
-          "/assets/img/services-page/orthodontists/hero-placeholder.png",
+          "/assets/img/who-we-work-with/5.webp",
         imageAlt: "Orthodontic service hero",
       }}
       aboutBlock={{
         smallTitle: "About Us",
         title: "CORE POSITIONING",
         description:
-          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.",
-        imageSrc: "/assets/img/services-page/moving/about-image.jpg",
+          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.",
+        imageSrc: "/assets/img/who-we-work-with/6.webp",
         imageAlt: "Dental practice about",
       }}
       featureBlock={{
@@ -100,7 +100,7 @@ export default function OrthodontistsServicePage() {
           "Improve consultation-to-treatment conversion",
         ],
         mainImageSrc:
-          "/assets/img/services-page/orthodontists/process-main.jpg",
+          "/assets/img/who-we-work-with/7.webp",
         mainImageAlt: "Orthodontic team in action",
       }}
       infoBlock={{
@@ -112,7 +112,7 @@ export default function OrthodontistsServicePage() {
           "We don't operate in silos",
           "We don't focus on vanity metrics",
         ],
-        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageSrc: "/assets/img/who-we-work-with/8.webp",
         centerImageAlt: "Why choose us",
         quote:
           "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",

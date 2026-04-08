@@ -18,7 +18,7 @@ function HeroSection({
   imageAlt,
 }) {
   return (
-    <section className="bg-slate-50 text-slate-900 py-8 md:py-16 md:pt-24">
+    <section className="bg-slate-50 text-slate-900 py-8 pt-24 md:py-16 md:pt-28">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-4 md:px-8 items-center">
         <div data-aos="fade-right" className="space-y-5">
           <p className="text-xs md:text-sm uppercase tracking-widest text-[#ef2f6b] font-semibold">
@@ -59,11 +59,10 @@ function HeroSection({
 
         <div
           data-aos="fade-left"
-          className="relative h-[calc(100vh/2.5)] md:h-96 rounded-3xl overflow-hidden flex items-center justify-center"
+          className="relative h-[calc(100vh/2.5)] md:h-[30rem] rounded-3xl overflow-hidden flex items-center justify-center"
         >
           {imageSrc ? (
             <>
-              <div className="absolute inset-0 bg-linear-to-r from-slate-100 to-slate-200" />
               <img
                 src={imageSrc}
                 alt={imageAlt}
@@ -71,16 +70,19 @@ function HeroSection({
               />
             </>
           ) : (
-            <div className="w-full h-full bg-slate-200 flex items-center justify-center text-[#ef2f6b] font-semibold text-xl">
-              PLACE IMAGE HERE
-            </div>
+            <div className="absolute inset-0 bg-linear-to-r from-slate-100 to-slate-200" />
           )}
 
           <div className="absolute bottom-4 left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 md:translate-y-0 bg-white rounded-xl px-3 py-2 shadow-2xl border border-slate-200">
             <p className="text-xs md:text-sm font-semibold text-slate-800">
               Emergency Pickup
             </p>
-            <p className="text-xs text-slate-500">{emergencyPhone}</p>
+            <a
+              href={`tel:${emergencyPhone}`}
+              className="text-xs text-slate-500 hover:text-pink-400"
+            >
+              {emergencyPhone}
+            </a>
           </div>
         </div>
       </div>
@@ -106,8 +108,8 @@ function AboutSection({ smallTitle, title, description, imageSrc, imageAlt }) {
               We Since 15 Years Business
             </p>
             <p className="mt-1 text-xs text-slate-100 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Our focus is simple: consistent patient acquisition and measurable
+              revenue growth.
             </p>
           </div>
         </div>
@@ -217,7 +219,7 @@ function ProcessSection({
     <section className="bg-slate-50 py-10 md:py-14">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Layout with image on right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
           {/* Left content */}
           <div data-aos="fade-right">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-3">
@@ -279,7 +281,7 @@ function ProcessSection({
           {/* Right image */}
           <div
             data-aos="fade-left"
-            className="h-60 md:h-80 bg-slate-200 rounded-3xl overflow-hidden"
+            className="h-60 md:h-96 bg-slate-200 rounded-3xl overflow-hidden"
           >
             {mainImageSrc ? (
               <img
@@ -313,10 +315,10 @@ function InfoSection({
   return (
     <section className="bg-white py-8 md:py-12">
       <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 items-center">
           <div
             data-aos="fade-right"
-            className="md:h-[25rem] h-60 rounded-3xl overflow-hidden shadow-lg bg-slate-100"
+            className="h-60 md:h-96 rounded-3xl overflow-hidden shadow-lg bg-slate-100"
           >
             {centerImageSrc ? (
               <img

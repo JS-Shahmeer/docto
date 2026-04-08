@@ -1,4 +1,5 @@
 import ServicePageLayout from "@/app/components/ServicePageLayout";
+import ProcessSectionServicesTwo from "@/app/components/ProcessSectionServicesTwo";
 import {
   Monitor,
   MousePointerClick,
@@ -121,6 +122,7 @@ We combine design, psychology, and strategy to ensure your visitors don’t just
 Stop losing patients due to poor design and weak messaging. Build a website that works for your clinic — 24/7."
       finalCtaButtonText="Get Free Website Audit"
       finalCtaButtonLink="/contact"
+      processComponent={<ProcessSectionServicesTwo />}
     />
   );
 }

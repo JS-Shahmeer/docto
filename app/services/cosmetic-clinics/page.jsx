@@ -41,18 +41,18 @@ export default function CosmeticClinicsServicePage() {
           "We build growth systems for cosmetic clinics focused on high-intent leads, stronger conversions, and consistent revenue growth.",
         primaryAction: { label: "Our Service", href: "/services" },
         secondaryAction: { label: "See Pricing", href: "/pricing" },
-        emergencyPhone: "+62 123 456 789",
+        emergencyPhone: "+612-5119-4369",
         imageSrc:
-          "/assets/img/services-page/cosmetic-clinics/hero-placeholder.png",
+          "/assets/img/who-we-work-with/9.webp",
         imageAlt: "Cosmetic clinic hero",
       }}
       aboutBlock={{
         smallTitle: "About Us",
         title: "CORE POSITIONING",
         description:
-          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.",
-        imageSrc: "/assets/img/services-page/moving/about-image.jpg",
-        imageAlt: "Dental practice about",
+          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.",
+        imageSrc: "/assets/img/who-we-work-with/10.webp",
+        imageAlt: "Cosmetic clinic about",
       }}
       featureBlock={{
         heading: "Our Approach",
@@ -100,7 +100,7 @@ export default function CosmeticClinicsServicePage() {
           "Increase booking rates for treatments and packages",
         ],
         mainImageSrc:
-          "/assets/img/services-page/cosmetic-clinics/process-main.jpg",
+          "/assets/img/who-we-work-with/11.webp",
         mainImageAlt: "Cosmetic clinic process",
       }}
       infoBlock={{
@@ -112,7 +112,7 @@ export default function CosmeticClinicsServicePage() {
           "We don't operate in silos",
           "We don't focus on vanity metrics",
         ],
-        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageSrc: "/assets/img/who-we-work-with/12.webp",
         centerImageAlt: "Why choose us",
         quote:
           "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",

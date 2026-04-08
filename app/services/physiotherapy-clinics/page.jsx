@@ -41,18 +41,18 @@ export default function PhysiotherapyClinicsServicePage() {
           "We partner with physiotherapy clinics to build systems that generate enquiries, improve conversions, and maximise practitioner utilisation.",
         primaryAction: { label: "Our Service", href: "/services" },
         secondaryAction: { label: "See Pricing", href: "/pricing" },
-        emergencyPhone: "+62 123 456 789",
+        emergencyPhone: "+612-5119-4369",
         imageSrc:
-          "/assets/img/services-page/physiotherapy-clinics/hero-placeholder.png",
+          "/assets/img/who-we-work-with/17.webp",
         imageAlt: "Physiotherapy clinic hero",
       }}
       aboutBlock={{
         smallTitle: "About Us",
         title: "CORE POSITIONING",
         description:
-          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond. Our focus is simple: consistent patient acquisition and measurable revenue growth.",
-        imageSrc: "/assets/img/services-page/moving/about-image.jpg",
-        imageAlt: "Dental practice about",
+          "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.",
+        imageSrc: "/assets/img/who-we-work-with/18.webp",
+        imageAlt: "Physiotherapy clinic about",
       }}
       featureBlock={{
         heading: "Our Approach",
@@ -100,7 +100,7 @@ export default function PhysiotherapyClinicsServicePage() {
           "Maximise practitioner utilisation",
         ],
         mainImageSrc:
-          "/assets/img/services-page/physiotherapy-clinics/process-main.jpg",
+          "/assets/img/who-we-work-with/19.webp",
         mainImageAlt: "Physiotherapy assessment",
       }}
       infoBlock={{
@@ -112,7 +112,7 @@ export default function PhysiotherapyClinicsServicePage() {
           "We don't operate in silos",
           "We don't focus on vanity metrics",
         ],
-        centerImageSrc: "/assets/img/services-page/moving/info-center.jpg",
+        centerImageSrc: "/assets/img/who-we-work-with/20.webp",
         centerImageAlt: "Why choose us",
         quote:
           "Instead, we build integrated growth systems that are measurable, continuously optimised, and aligned with real business outcomes.",
