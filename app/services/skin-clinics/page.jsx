@@ -51,7 +51,7 @@ export default function SkinClinicsServicePage() {
       }}
       aboutBlock={{
         smallTitle: "About Us",
-        title: "CORE POSITIONING",
+        title: "Connected Patient Growth System",
         description:
           "Healthcare businesses don’t struggle because of a lack of marketing—they struggle because they lack a connected growth system. We operate as a long-term growth partner, designing and implementing end-to-end systems that manage your entire patient journey—from first search to confirmed booking and beyond.",
         imageSrc: "/assets/img/who-we-work-with/14.webp",

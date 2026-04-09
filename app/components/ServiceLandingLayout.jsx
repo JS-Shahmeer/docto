@@ -73,7 +73,7 @@ function HeroSection({
             <div className="absolute inset-0 bg-linear-to-r from-slate-100 to-slate-200" />
           )}
 
-          <div className="absolute bottom-4 left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 md:translate-y-0 bg-white rounded-xl px-3 py-2 shadow-2xl border border-slate-200">
+          <div className="absolute hidden bottom-4 left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 md:translate-y-0 bg-white rounded-xl px-3 py-2 shadow-2xl border border-slate-200">
             <p className="text-xs md:text-sm font-semibold text-slate-800">
               Emergency Pickup
             </p>
