@@ -104,9 +104,7 @@ We install a system that consistently generates high-quality reviews — turning
           a: "No, even clinics with existing reviews benefit from a consistent review generation process.",
         },
       ]}
-      finalCtaText={`Ready to Build a Reputation That Attracts Patients?`}
-      finalCtaButtonText="Get Your Free Review Audit"
-      finalCtaButtonLink="/contact"
+     finalCtaSubtitle="Ready to Build a Reputation That Attracts Patients?"
       processComponent={<ProcessSectionServicesFive />}
     />
   );

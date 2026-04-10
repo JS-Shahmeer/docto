@@ -21,9 +21,21 @@ export default function RealtimePerformanceDashboardPage() {
       primaryCtaLink="/contact"
       heroImage="/assets/img/inner-pages/real-time-performance-dashboard/001.webp"
       heroImageAlt="Realtime performance dashboard for clinics"
-      sectionTwoTitle="Why a Realtime Dashboard Matters"
-      sectionTwoTextOne="When clinic data is delayed, scattered, or difficult to access, decision-making becomes slower and less effective. Teams can miss important changes in enquiries, campaign performance, or operational trends."
-      sectionTwoTextTwo="A realtime performance dashboard helps bring key insights into one place so your clinic can monitor activity, respond faster, and make more informed growth decisions."
+      sectionTwoTitle="You can't scale what you can't see"
+      sectionTwoTextOne="Most clinics operate on disconnected data.
+
+Ads show clicks,
+Reception tracks calls,
+Software tracks bookings
+
+But nothing connects."
+      sectionTwoTextTwo="This leads to:
+
+Poor decisions,
+Wasted spend,
+Missed growth opportunities.
+
+We install your Real-Time Growth Dashboard — a single source of truth for your clinic's performance."
       sectionTwoImage="/assets/img/inner-pages/real-time-performance-dashboard/002.webp"
       sectionTwoImageAlt="Clinic realtime dashboard and metrics"
       featureCards={[
@@ -48,7 +60,7 @@ export default function RealtimePerformanceDashboardPage() {
       valueTextTwo="They are especially valuable for teams that want quicker reporting, better visibility into growth channels, and a more proactive way to manage performance."
       valueImage="/assets/img/inner-pages/real-time-performance-dashboard/003.webp"
       valueImageAlt="Realtime clinic growth dashboard"
-      consultationText="Want clearer visibility into how your clinic is performing right now?"
+      consultationText="Do you actually know what’s driving your clinic’s growth right now?"
       buildTitle="What We Help Build"
       buildItems={[
         "Realtime performance dashboards",
@@ -62,7 +74,7 @@ export default function RealtimePerformanceDashboardPage() {
       ]}
       buildImage="/assets/img/inner-pages/real-time-performance-dashboard/004.webp"
       buildImageAlt="Clinic dashboard system build"
-      quoteText="The faster you can see what is happening, the faster your clinic can respond and improve."
+      quoteText="Clarity isn’t optional — it’s your growth advantage."
       relatedServices={[
         {
           icon: <TrendingUp size={26} />,
@@ -98,9 +110,8 @@ export default function RealtimePerformanceDashboardPage() {
           a: "No, clinics of all sizes can benefit from having clearer and faster access to important performance data.",
         },
       ]}
-      finalCtaText="Ready to monitor clinic performance with more clarity and speed?"
-      finalCtaButtonText="Book Your Free Consultation"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Ready to See — and Scale — What’s Actually Working?"
+      finalCtaDescription=" Get full control over your clinic’s performance and make decisions backed by real data"
       processComponent={<ProcessSectionServicesSix />}
     />
   );

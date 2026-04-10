@@ -98,10 +98,8 @@ export default function MissedCallTextbackSystemPage() {
           a: "No. It supports your team by bridging the gap instantly until staff can continue the conversation properly.",
         },
       ]}
-      finalCtaText="Ready to Stop Losing Patients on Missed Calls?"
-      finalCtaButtonText="BOOK A DEMO"
-      finalCtaButtonLink="/contact"
       processComponent={<ProcessSectionServicesFour />}
+      finalCtaSubtitle="Ready to Stop Losing Patients on Missed Calls?"
     />
   );
 }

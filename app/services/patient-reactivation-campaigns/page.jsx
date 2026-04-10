@@ -19,12 +19,12 @@ export default function PatientReactivationCampaignsPage() {
       intro="Your next bookings aren’t always new patients — they’re the ones who already trust you. We build automated reactivation campaigns that bring inactive patients back — consistently."
       primaryCtaText="GET A CAMPAIGN AUDIT"
       primaryCtaLink="/contact"
-      heroImage="/assets/img/services/patient-reactivation-campaigns/hero.webp"
+      heroImage="/assets/img/inner-pages/patient-acquisition-ads/001.webp"
       heroImageAlt="Patient reactivation campaigns for clinics"
       sectionTwoTitle="You’re sitting on untapped revenue"
       sectionTwoTextOne="Most clinics chase new patients while ignoring the easiest ones to convert. Your database is full of patients who didn’t return, forgot, or never followed up."
       sectionTwoTextTwo="We turn that into a Repeat Revenue System."
-      sectionTwoImage="/assets/img/services/patient-reactivation-campaigns/section-two.webp"
+      sectionTwoImage="/assets/img/inner-pages/patient-acquisition-ads/002.webp"
       sectionTwoImageAlt="Patient reactivation system for clinics"
       featureCards={[
         {
@@ -46,7 +46,7 @@ export default function PatientReactivationCampaignsPage() {
       valueTitle="Increase revenue without increasing ad spend"
       valueTextOne="Reactivating patients is faster, cheaper, and more predictable than constantly chasing new leads."
       valueTextTwo="Bring back more repeat visits, increase lifetime value, and build stronger patient relationships — all from the database you already have."
-      valueImage="/assets/img/services/patient-reactivation-campaigns/value.webp"
+      valueImage="/assets/img/inner-pages/patient-acquisition-ads/003.webp"
       valueImageAlt="Repeat patient revenue growth through reactivation campaigns"
       consultationText="How many past patients haven’t come back?"
       buildTitle="What We Help Build"
@@ -60,7 +60,7 @@ export default function PatientReactivationCampaignsPage() {
         "Return-visit automation flows",
         "Repeat revenue growth campaigns",
       ]}
-      buildImage="/assets/img/services/patient-reactivation-campaigns/build.webp"
+      buildImage="/assets/img/inner-pages/patient-acquisition-ads/004.webp"
       buildImageAlt="Patient reactivation workflow setup for clinics"
       quoteText="Your next best booking is often a patient who already knows and trusts your clinic."
       relatedServices={[
@@ -98,9 +98,7 @@ export default function PatientReactivationCampaignsPage() {
           a: "No. It can also be used to re-engage older leads who enquired but never booked.",
         },
       ]}
-      finalCtaText="Ready to Unlock Revenue From Your Existing Patients?"
-      finalCtaButtonText="GET A CAMPAIGN AUDIT"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Ready to Unlock Revenue From Your Existing Patients?"
       processComponent={<ProcessSectionServicesFour />}
     />
   );

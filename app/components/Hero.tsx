@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import Img1 from "../../public/assets/img/homepage/banner/3.webp";
 import Img2 from "../../public/assets/img/homepage/banner/2.webp";
 import Img3 from "../../public/assets/img/homepage/banner/1.webp";
+import Link from "next/link";
 
 const banners = [
   {
@@ -52,7 +53,6 @@ export default function Hero() {
           pauseOnMouseEnter: true,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
         loop={true}
         className="hero-swiper"
       >
@@ -107,16 +107,14 @@ absolute -top-[90px] left-0
                 )}
 
                 <div className="hero-buttons relative z-[2] flex flex-col md:flex-row gap-4">
-                  <a
-                    href="https://calendly.com/digitalparadigm/product-strategy-call"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/contact"
                     className="px-6 py-3 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <span>Get a Free Growth Audit</span>
                     <span className="hero-services-divider">|</span>
                     <span>+</span>
-                  </a>
+                  </Link>
                   <a
                     href="https://calendly.com/digitalparadigm/product-strategy-call"
                     target="_blank"

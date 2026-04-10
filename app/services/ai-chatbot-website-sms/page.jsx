@@ -110,12 +110,11 @@ We install an AI-powered conversation system that responds instantly on your web
           a: "Yes — by responding instantly and guiding each inquiry toward action, it helps convert more conversations into appointments.",
         },
       ]}
-      finalCtaText={`Ready to Capture Every Patient Conversation?
-
-Turn every inquiry into an opportunity — automatically.`}
-      finalCtaButtonText="Book Your AI Demo"
-      finalCtaButtonLink="/contact"
+      
       processComponent={<ProcessSectionServicesFour />}
+
+      finalCtaSubtitle="Ready to Capture Every Patient Conversation?"
+      finalCtaDescription="Turn every inquiry into an opportunity — automatically."
     />
   );
 }

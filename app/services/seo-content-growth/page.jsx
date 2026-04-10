@@ -20,10 +20,8 @@ export default function SeoContentGrowthPage() {
       intro="Stop relying only on ads. We build a long-term organic growth system that brings in high-intent patients every month."
       primaryCtaText="Get Your Free SEO Audit"
       primaryCtaLink="/contact"
-
       heroImage="/assets/img/inner-pages/seo-content-growth/001.webp"
       heroImageAlt="SEO content growth for clinics"
-
       sectionTwoTitle="If you're not showing up, you're losing patients daily."
       sectionTwoTextOne={`Patients are actively searching for services you offer — but they choose from the top results, not page two.
 
@@ -31,10 +29,8 @@ If your clinic isn't visible, you don't exist in their decision process.`}
       sectionTwoTextTwo="We build your Organic Patient Acquisition Engine — a long-term system that brings patients to you consistently, without spending on every click."
       sectionTwoImage="/assets/img/inner-pages/seo-content-growth/002.webp"
       sectionTwoImageAlt="SEO content strategy for clinics"
-
       showGrowthSystem={true}
       growthSystemHighlightIndex={0}
-
       featureCards={[
         {
           icon: <Search size={28} />,
@@ -52,20 +48,26 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           text: "Results that grow month after month without extra ad spend.",
         },
       ]}
-
       valueTitle="Turn Google into your most reliable referral source"
       valueTextOne="This isn't about vanity rankings. It's about owning your category in your local market."
       valueResultLabel="The result:"
       valueResultItems={[
-        { text: "Consistent inbound traffic", tag: "Steady growth", tagColor: "pink" },
-        { text: "Higher quality leads", tag: "Better patients", tagColor: "green" },
+        {
+          text: "Consistent inbound traffic",
+          tag: "Steady growth",
+          tagColor: "pink",
+        },
+        {
+          text: "Higher quality leads",
+          tag: "Better patients",
+          tagColor: "green",
+        },
         { text: "Reduced ad dependency", tag: "Lower costs", tagColor: "blue" },
       ]}
       valueImage="/assets/img/inner-pages/seo-content-growth/003.webp"
       valueImageAlt="Clinic SEO and content growth"
-
-      consultationText="Are patients choosing your competitors on Google?"
-
+      consultationText="The best time to start SEO was 6 months ago. The next best time is now."
+      consultationButtonText="GET YOUR AUDIT"
       buildTitle="Built for clinics focused on long-term growth"
       buildItems={[
         "Clinics not ranking on Google",
@@ -77,7 +79,6 @@ If your clinic isn't visible, you don't exist in their decision process.`}
       ]}
       buildImage="/assets/img/inner-pages/seo-content-growth/004.webp"
       buildImageAlt="SEO content planning for clinics"
-
       processComponent={
         <>
           <ProcessSectionServicesThree />
@@ -136,7 +137,8 @@ If your clinic isn't visible, you don't exist in their decision process.`}
                     lineHeight: 1.5,
                   }}
                 >
-                  The best time to start SEO was 6 months ago. The next best time is now.
+                  The best time to start SEO was 6 months ago. The next best
+                  time is now.
                 </p>
                 <a
                   href="/contact"
@@ -159,9 +161,7 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           </div>
         </>
       }
-
       quoteText="Build a growth system that works — even when ads are off."
-
       relatedServices={[
         {
           icon: <Waypoints size={26} />,
@@ -179,7 +179,6 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           text: "Strengthen trust through content and branding.",
         },
       ]}
-
       faqs={[
         {
           q: "How long does SEO take to work?",
@@ -206,10 +205,8 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           a: "Yes — SEO is a long-term strategy with compounding results over time.",
         },
       ]}
-
-      finalCtaText="Ready to Build Long-Term Patient Growth? Create a system that brings patients in — every single month."
-      finalCtaButtonText="Get Free SEO Audit"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Ready to Build Long-Term Patient Growth?"
+      finalCtaDescription=" Create a system that brings patients in — every single month."
     />
   );
 }

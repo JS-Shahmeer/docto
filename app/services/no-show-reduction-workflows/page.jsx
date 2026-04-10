@@ -104,10 +104,8 @@ We install automated workflows that ensure patients confirm, remember, and atten
           a: "Yes — reschedule and gap-filling workflows can help replace cancellations faster and protect your calendar.",
         },
       ]}
-      finalCtaText={`Ready to Eliminate No-Shows as a Growth Problem?`}
-      finalCtaButtonText="BOOK A DEMO"
-      finalCtaButtonLink="/contact"
       processComponent={<ProcessSectionServicesFour />}
+      finalCtaSubtitle="Ready to Eliminate No-Shows as a Growth Problem?"
     />
   );
 }

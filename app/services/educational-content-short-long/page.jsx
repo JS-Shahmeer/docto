@@ -103,9 +103,7 @@ We build a content system that educates, builds trust, and positions your clinic
           a: "Yes — educational content can strengthen both search visibility and ongoing social engagement.",
         },
       ]}
-      finalCtaText={`Ready to Attract Patients Without Chasing Them?`}
-      finalCtaButtonText="Book a Content Strategy Call"
-      finalCtaButtonLink="/contact"
+       finalCtaSubtitle="Ready to Attract Patients Without Chasing Them?"
     />
   );
 }

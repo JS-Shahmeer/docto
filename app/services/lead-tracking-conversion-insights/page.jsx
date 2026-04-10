@@ -12,42 +12,59 @@ export default function LeadTrackingConversionInsightsPage() {
   return (
     <ServicePageLayout
       category="Intelligence Dashboard"
-      titleTop="Lead Tracking"
-      titleMain="Conversion Insights"
-      titleBottom="for Clinics"
-      intro="Track how leads move from first enquiry to booked patient so your clinic can improve conversion pathways with clearer data and better insight."
-      primaryCtaText="Book a Consultation"
+      titleTop="Understand Why"
+      titleMain="Patients Book — Not Just"
+      titleBottom="Where They Come From"
+      intro="Leads don’t grow your clinic. 
+Conversions do. We track and analyse the entire patient journey — so you can increase bookings, not just enquiries. "
+      primaryCtaText="GET A FREE INSIGHTS AUDIT"
       primaryCtaLink="/contact"
       heroImage="/assets/img/inner-pages/lead-tracking-conversion-insights/001.webp"
       heroImageAlt="Lead tracking and conversion insights for clinics"
-      sectionTwoTitle="Why Lead Tracking Matters"
-      sectionTwoTextOne="Without lead tracking, clinics often do not know where enquiries are coming from, how leads are progressing, or where conversion opportunities are being lost."
-      sectionTwoTextTwo="Lead tracking and conversion insights help your clinic understand the full patient journey from first touchpoint through to action, making optimisation easier and more targeted."
+      sectionTwoTitle="Leads are coming in… but revenue isn't scaling"
+      sectionTwoTextOne="Most clinics track leads — but not what happens after.
+
+Which leads convert?,
+Which ones drop off?,
+Why does one patient book and another doesn't?
+
+Without these answers, growth stays inconsistent."
+      sectionTwoTextTwo="We install your Conversion Insight System — so every decision is backed by real patient behaviour."
       sectionTwoImage="/assets/img/inner-pages/lead-tracking-conversion-insights/002.webp"
       sectionTwoImageAlt="Clinic lead tracking and conversions"
       featureCards={[
         {
           icon: <UsersRound size={28} />,
-          title: "Clearer Lead Visibility",
-          text: "Understand where leads are entering your system and how they move through it.",
+          title: "End-to-End Patient Journey Tracking ",
+          text: "From first click to confirmed booking.",
         },
         {
           icon: <ArrowRightLeft size={28} />,
-          title: "Better Conversion Insights",
-          text: "See which stages of the patient journey are converting well and where drop-off happens.",
+          title: "Conversion Behaviour Analysis",
+          text: "Understand what drives patients to take action.",
         },
         {
           icon: <SearchCheck size={28} />,
-          title: "Smarter Optimisation",
-          text: "Improve follow-up, campaigns, and landing pages using clearer lead data.",
+          title: "Channel Quality Insights",
+          text: "Identify which sources bring real patients — not just leads.",
         },
       ]}
-      valueTitle="How Lead Tracking Supports Growth"
-      valueTextOne="Lead tracking helps clinics improve conversion by showing how potential patients interact with your marketing, website, and follow-up systems."
-      valueTextTwo="It becomes easier to improve results when you can identify where high-intent leads are being lost and where stronger processes are needed."
+      valueTitle="Increase conversions without increasing spend"
+      valueTextOne="Most growth is lost between enquiry and booking.
+
+We identify:
+
+Where leads drop off,
+What slows conversion,
+What increases trust"
+      valueTextTwo="Result:
+
+Higher booking rates,
+Better lead quality,
+More revenue from existing traffic."
       valueImage="/assets/img/inner-pages/lead-tracking-conversion-insights/003.webp"
       valueImageAlt="Lead conversion tracking for clinics"
-      consultationText="Want better visibility into how your leads become patients?"
+      consultationText="Do you know why your best leads convert?"
       buildTitle="What We Help Build"
       buildItems={[
         "Lead tracking systems",
@@ -97,9 +114,7 @@ export default function LeadTrackingConversionInsightsPage() {
           a: "No, it can support insights across ads, SEO, referrals, and other enquiry sources.",
         },
       ]}
-      finalCtaText="Ready to improve how your clinic tracks and converts leads?"
-      finalCtaButtonText="Book Your Free Consultation"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Turn Every Lead Into a Measurable Opportunity"
     />
   );
 }

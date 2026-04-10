@@ -104,9 +104,7 @@ We build personal brands that position doctors as recognised authorities patient
           a: "Yes, stronger practitioner visibility can improve trust, conversion, and long-term brand differentiation.",
         },
       ]}
-      finalCtaText={`Ready to Become the Doctor Patients Trust First?`}
-      finalCtaButtonText="BOOK A BRAND STRATEGY CALL"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Ready to Become the Doctor Patients Trust First?"
       processComponent={<ProcessSectionServicesThree />}
     />
   );

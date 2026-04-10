@@ -13,42 +13,57 @@ export default function PatientFlowStaffInsightsPage() {
   return (
     <ServicePageLayout
       category="Intelligence Dashboard"
-      titleTop="Patient Flow"
-      titleMain="& Staff Insights"
-      titleBottom="for Clinics"
-      intro="Improve clinic efficiency with clearer visibility into patient flow, team activity, and operational patterns that affect service delivery."
-      primaryCtaText="Book a Consultation"
+      titleTop="Fix Bottlenecks."
+      titleMain="Improve Efficiency."
+      titleBottom="Increase Revenue."
+      intro="More patients won’t fix a broken system. We give you full visibility into patient flow and team performance — so your clinic runs efficiently as it grows. "
+      primaryCtaText=" GET A FREE OPERATIONS AUDIT"
       primaryCtaLink="/contact"
       heroImage="/assets/img/inner-pages/patient-flow-staff-insights/001.webp"
       heroImageAlt="Patient flow and staff insights for clinics"
-      sectionTwoTitle="Why Patient Flow & Staff Insights Matter"
-      sectionTwoTextOne="Operational bottlenecks, inconsistent patient movement, and limited visibility into staff workload can make it harder for clinics to deliver smooth experiences and maintain efficiency."
-      sectionTwoTextTwo="Patient flow and staff insights help clinics understand how people, processes, and workloads interact so improvements can be made with more confidence."
+      sectionTwoTitle="Growth breaks clinics without systems"
+      sectionTwoTextOne="Most clinics struggle internally:
+
+Missed calls,
+Overloaded reception,
+Inefficient scheduling,
+Idle chair time
+
+This limits growth — even with strong marketing."
+      sectionTwoTextTwo="We install your Operational Insight System — so your clinic can handle growth without breaking."
       sectionTwoImage="/assets/img/inner-pages/patient-flow-staff-insights/002.webp"
       sectionTwoImageAlt="Clinic patient flow and staff reporting"
       featureCards={[
         {
           icon: <Workflow size={28} />,
-          title: "Clearer Operational Flow",
-          text: "See how patients move through the clinic journey and where bottlenecks may occur.",
+          title: "Patient Journey Visibility",
+          text: "Track movement from enquiry to treatment.",
         },
         {
           icon: <Users size={28} />,
-          title: "Better Team Visibility",
-          text: "Understand staff patterns, workload pressures, and areas that may need support.",
+          title: "Staff Performance Clarity",
+          text: "Measure response times, productivity, and efficiency.",
         },
         {
           icon: <Hospital size={28} />,
-          title: "Improved Clinic Efficiency",
-          text: "Use operational insights to support smoother service delivery and better patient experiences.",
+          title: "Workflow Optimisation",
+          text: "Identify and fix operational bottlenecks.",
         },
       ]}
-      valueTitle="How Flow & Staff Insights Support Growth"
-      valueTextOne="Stronger operational visibility helps clinics improve service quality by making patient movement and team coordination easier to monitor."
-      valueTextTwo="These insights can also support staffing decisions, workflow changes, and process improvements that reduce friction across the clinic."
+      valueTitle="Efficiency is your growth multiplier"
+      valueTextOne="When operations improve:
+
+Patients move faster through your system,
+Staff perform better,
+Revenue per patient increases"
+      valueTextTwo="Result:
+
+Better patient experience,
+Higher retention,
+Increased profitability"
       valueImage="/assets/img/inner-pages/patient-flow-staff-insights/003.webp"
       valueImageAlt="Clinic operations and staff insights"
-      consultationText="Want better visibility into how your clinic is operating day to day?"
+      consultationText="Is your clinic growing — or just getting busier?"
       buildTitle="What We Help Build"
       buildItems={[
         "Patient flow reporting systems",
@@ -98,9 +113,7 @@ export default function PatientFlowStaffInsightsPage() {
           a: "Yes, even small clinics can benefit from clearer visibility into flow, workload, and operational bottlenecks.",
         },
       ]}
-      finalCtaText="Ready to improve clinic efficiency with better operational insight?"
-      finalCtaButtonText="Book Your Free Consultation"
-      finalCtaButtonLink="/contact"
+           finalCtaSubtitle="Run a Clinic That Scales — Not One That Struggles to Keep Up"
       processComponent={<ProcessSectionServicesSix />}
     />
   );

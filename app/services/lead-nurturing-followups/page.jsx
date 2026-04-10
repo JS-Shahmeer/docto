@@ -110,10 +110,8 @@ We build automated follow-up systems that nurture, remind, and convert leads int
           a: "Usually 1–2 weeks.",
         },
       ]}
-      finalCtaText={`Ready to Convert More Leads Without More Traffic?`}
-      finalCtaButtonText="Book a Demo"
-      finalCtaButtonLink="/contact"
       processComponent={<ProcessSectionServicesFour />}
+      finalCtaSubtitle="Ready to Convert More Leads Without More Traffic?"
     />
   );
 }

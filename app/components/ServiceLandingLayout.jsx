@@ -37,23 +37,23 @@ function HeroSection({
 
           <div className="flex flex-wrap gap-2">
             <a
-              href="/contact"
-              className="px-5 py-2 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm"
-            >
-              <span>Contact Us</span>
-              <span className="hero-services-divider">|</span>
-              <span>+</span>
-            </a>
-            <a
               href="https://calendly.com/digitalparadigm/product-strategy-call"
               target="_blank"
               rel="noopener noreferrer"
+              className="px-5 py-2 bg-[#ef2f6b] text-white font-semibold rounded-full border-2 border-[#ef2f6b] hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm"
+            >
+              <span>Book a Strategy Call</span>
+              <span className="hero-services-divider">|</span>
+              <span>+</span>
+            </a>
+            <Link
+              href="/contact"
               className="px-5 py-2 bg-transparent text-black hover:text-white border-2 border-[#ef2f6b] font-semibold rounded-full hover:bg-[#d92a5a] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm"
             >
               <span>Get a Free Growth Audit</span>
               <span className="hero-services-divider">|</span>
               <span>+</span>
-            </a>
+            </Link>
           </div>
         </div>
 

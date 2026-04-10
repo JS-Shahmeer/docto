@@ -13,42 +13,56 @@ export default function RoiCampaignAttributionPage() {
   return (
     <ServicePageLayout
       category="Intelligence Dashboard"
-      titleTop="ROI Campaign"
-      titleMain="Attribution"
-      titleBottom="for Clinics"
-      intro="Understand which campaigns are driving real returns so your clinic can invest more confidently in the channels that produce results."
-      primaryCtaText="Book a Consultation"
+      titleTop="Know Exactly"
+      titleMain="What’s Driving "
+      titleBottom="Your Revenue"
+      intro="Stop guessing which campaigns work. We connect every booking and patient back to the source that generated it — so you can scale profitably."
+      primaryCtaText=" GET A FREE ROI AUDIT"
       primaryCtaLink="/contact"
       heroImage="/assets/img/inner-pages/roi-campaign-attribution/001.webp"
       heroImageAlt="ROI campaign attribution for clinics"
-      sectionTwoTitle="Why ROI Attribution Matters"
-      sectionTwoTextOne="Many clinics invest in ads, SEO, and other marketing channels without a clear way to connect spend to enquiries, bookings, or business outcomes."
-      sectionTwoTextTwo="ROI campaign attribution helps reveal which channels and campaigns are generating meaningful results so budget decisions can be based on performance instead of assumptions."
+      sectionTwoTitle="You’re investing in marketing — but flying blind on ROI"
+      sectionTwoTextOne="Most clinics don’t know:
+
+Which campaigns generate revenue,
+Which channels waste budget,
+Where to scale safely
+
+This leads to poor allocation and stalled growth."
+      sectionTwoTextTwo="We install your Revenue Attribution System — linking every dollar spent to real outcomes."
       sectionTwoImage="/assets/img/inner-pages/roi-campaign-attribution/002.webp"
       sectionTwoImageAlt="Clinic marketing ROI attribution"
       featureCards={[
         {
           icon: <BadgeDollarSign size={28} />,
-          title: "Smarter Budget Allocation",
-          text: "See where marketing spend is driving the strongest patient and business outcomes.",
+          title: "Revenue-Level Attribution",
+          text: "Track bookings and treatments back to campaigns.",
         },
         {
           icon: <ScanLine size={28} />,
-          title: "Clearer Channel Attribution",
-          text: "Understand which campaigns and touchpoints are contributing to conversions.",
+          title: "True ROI Clarity",
+          text: "Measure profit — not just leads.",
         },
         {
           icon: <Target size={28} />,
-          title: "Better Growth Decisions",
-          text: "Invest with more confidence in the channels that are creating measurable value.",
+          title: "Cross-Channel Intelligence ",
+          text: "See performance across all platforms in one view.",
         },
       ]}
-      valueTitle="How ROI Attribution Supports Growth"
-      valueTextOne="ROI attribution helps clinics move beyond vanity metrics by focusing on the channels and campaigns that influence real patient outcomes."
-      valueTextTwo="This makes it easier to scale what is working, reduce wasted spend, and create a more accountable growth strategy over time."
+      valueTitle="Turn marketing into a predictable investment — not a risk"
+      valueTextOne="When you know what drives revenue:
+
+You scale winning campaigns,
+You eliminate wasted spend,
+You grow with confidence"
+      valueTextTwo="Result:
+
+Higher ROI,
+Smarter budget allocation,
+Predictable growth"
       valueImage="/assets/img/inner-pages/roi-campaign-attribution/003.webp"
       valueImageAlt="Clinic campaign ROI tracking"
-      consultationText="Want to know which campaigns are truly delivering returns?"
+      consultationText="Do you know which campaign is actually making you money? "
       buildTitle="What We Help Build"
       buildItems={[
         "Campaign attribution systems",
@@ -98,9 +112,7 @@ export default function RoiCampaignAttributionPage() {
           a: "Yes, clearer attribution helps clinics reduce wasted spend and focus on what is actually working.",
         },
       ]}
-      finalCtaText="Ready to understand the real return behind your marketing?"
-      finalCtaButtonText="Book Your Free Consultation"
-      finalCtaButtonLink="/contact"
+     finalCtaSubtitle="Scale What Works. Cut What Doesn’t."
       processComponent={<ProcessSectionServicesSix />}
     />
   );

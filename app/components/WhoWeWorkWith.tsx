@@ -19,22 +19,27 @@ const audienceItems = [
   {
     title: "Dental Clinics",
     image: Img1,
+    path: "/services/dental-clinics",
   },
   {
     title: "Physiotherapists Clinics",
     image: Img2,
+    path: "/services/physiotherapy-clinics",
   },
   {
     title: "Orthodontists",
     image: Img3,
+    path: "/services/orthodontists",
   },
   {
     title: "Skin clinics",
     image: Img4,
+    path: "/services/skin-clinics",
   },
   {
     title: "Cosmetic clinics",
     image: Img5,
+    path: "/services/cosmetic-clinics",
   },
 ];
 
@@ -108,18 +113,20 @@ absolute top-[40px] left-1/2 -translate-x-1/2
           >
             {audienceItems.map((item, index) => (
               <SwiperSlide key={index}>
-                <article className="group h-full">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg h-48 md:h-96 bg-gray-200 mb-4">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 text-center group-hover:text-pink-600 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                </article>
+                <Link href={item.path}>
+                  <article className="group h-full cursor-pointer">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg h-48 md:h-96 bg-gray-200 mb-4">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 text-center group-hover:text-pink-600 transition-colors duration-300">
+                      {item.title}
+                    </h3>
+                  </article>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -207,9 +207,12 @@ But most clinics miss calls, reply late, and forget follow-ups.`}
         },
       ]}
 
-      finalCtaText="Ready to Capture Every Lead — Instantly? Turn response time into your competitive advantage."
-      finalCtaButtonText="Get Free AI Audit"
-      finalCtaButtonLink="/contact"
+      finalCtaSubtitle="Ready to Capture Every Lead — Instantly?"
+      finalCtaDescription="Turn response time into your competitive advantage."
+      finalCtaButton1Text="Get Free AI Audit"
+      finalCtaButton1Link="/contact"
+      finalCtaButton2Text="Book a Demo"
+      finalCtaButton2Link="https://calendly.com/digitalparadigm/product-strategy-call"
     />
   );
 }

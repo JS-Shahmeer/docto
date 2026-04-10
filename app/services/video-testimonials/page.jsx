@@ -97,9 +97,7 @@ export default function VideoTestimonialsPage() {
           a: "Yes. They reduce doubt, build trust faster, and help patients feel more confident taking action.",
         },
       ]}
-      finalCtaText="Ready to Show Proof That Patients Believe?"
-      finalCtaButtonText="BOOK A STRATEGY CALL"
-      finalCtaButtonLink="/contact"
+       finalCtaSubtitle="Ready to Show Proof That Patients Believe?"
     />
   );
 }

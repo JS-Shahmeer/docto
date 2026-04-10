@@ -5,6 +5,8 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import ProcessSectionServices from "@/app/components/ProcessSectionServices";
 import CTASection from "@/app/components/CTASection";
+import ScrollToTopButton from "@/app/components/ScrollToTopButton";
+import { Rocket as RocketIcon, Phone as PhoneCall } from 'lucide-react';
 
 /* =========================
    ANIMATED RESULTS LIST
@@ -54,14 +56,17 @@ function AnimatedResultsList({ items = [] }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           items.forEach((_, i) => {
-            setTimeout(() => {
-              setVisible((prev) => [...prev, i]);
-            }, 200 + i * 180);
+            setTimeout(
+              () => {
+                setVisible((prev) => [...prev, i]);
+              },
+              200 + i * 180,
+            );
           });
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -71,7 +76,15 @@ function AnimatedResultsList({ items = [] }) {
   if (!items.length) return null;
 
   return (
-    <div ref={ref} style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "1rem" }}>
+    <div
+      ref={ref}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "12px",
+        marginTop: "1rem",
+      }}
+    >
       {items.map((item, i) => (
         <div
           key={item.text}
@@ -84,7 +97,9 @@ function AnimatedResultsList({ items = [] }) {
             borderRadius: "10px",
             background: "#fff",
             opacity: visible.includes(i) ? 1 : 0,
-            transform: visible.includes(i) ? "translateX(0)" : "translateX(-24px)",
+            transform: visible.includes(i)
+              ? "translateX(0)"
+              : "translateX(-24px)",
             transition: "opacity 0.45s ease, transform 0.45s ease",
           }}
         >
@@ -157,6 +172,7 @@ export default function ServicePageLayout({
   valueImageAlt,
 
   consultationText,
+  consultationButtonText,
 
   buildTitle,
   buildItems = [],
@@ -170,6 +186,7 @@ export default function ServicePageLayout({
   processComponent = null,
 
   quoteText,
+  quoteButtonText,
 
   relatedServices = [],
 
@@ -178,11 +195,22 @@ export default function ServicePageLayout({
   finalCtaText,
   finalCtaButtonText = "Book Your Free Consultation",
   finalCtaButtonLink = "/contact",
+
+  finalCtaBackgroundImage = "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1800&auto=format&fit=crop",
+  finalCtaTitle = "Get In Touch",
+  finalCtaSubtitle = "Ready to Grow Your Patient Bookings?",
+  finalCtaDescription = "Get a clear roadmap to attract and convert more patients — without wasting time or budget.",
+  finalCtaButton1Text = "Get Free Growth Audit",
+  finalCtaButton1Link = "https://calendly.com/digitalparadigm/product-strategy-call",
+  finalCtaButton2Text = "Book a Strategy Call",
+  finalCtaButton2Link = "https://calendly.com/digitalparadigm/product-strategy-call",
 }) {
   const [openFaq, setOpenFaq] = useState(null);
 
   // ✅ Hook inside the component — correct
-  const [activeGrowthStep, setActiveGrowthStep] = useState(growthSystemHighlightIndex);
+  const [activeGrowthStep, setActiveGrowthStep] = useState(
+    growthSystemHighlightIndex,
+  );
 
   return (
     <main className="service-page overflow-x-clip">
@@ -226,13 +254,24 @@ export default function ServicePageLayout({
 
             <p className="service-intro">{intro}</p>
 
-            <Link href={primaryCtaLink} className="service-btn service-btn-primary">
+            <Link
+              href={primaryCtaLink}
+              className="service-btn service-btn-primary"
+            >
               {primaryCtaText}
             </Link>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="150" className="service-image-wrap">
-            <img src={heroImage} alt={heroImageAlt} className="service-image service-image-hero" />
+          <div
+            data-aos="fade-left"
+            data-aos-delay="150"
+            className="service-image-wrap"
+          >
+            <img
+              src={heroImage}
+              alt={heroImageAlt}
+              className="service-image service-image-hero"
+            />
           </div>
         </div>
       </section>
@@ -252,92 +291,13 @@ export default function ServicePageLayout({
           <div data-aos="fade-left" data-aos-delay="100">
             <h2 className="service-heading">{sectionTwoTitle}</h2>
             <div className="service-divider" />
-            <p className="service-text service-text-spaced">{sectionTwoTextOne}</p>
+            <p className="service-text service-text-spaced">
+              {sectionTwoTextOne}
+            </p>
             <p className="service-text">{sectionTwoTextTwo}</p>
           </div>
         </div>
       </section>
-
-      {/* GROWTH SYSTEM SECTION */}
-      {showGrowthSystem && (
-        <section className="service-section service-growth-system">
-          <div className="container" data-aos="fade-up">
-            <p className="service-category" style={{ marginBottom: "0.5rem" }}>
-              How This Fits Into Your Growth System
-            </p>
-            <h2 className="service-heading" style={{ maxWidth: "680px" }}>
-              This isn't a standalone service —{" "}
-              <span className="service-heading-soft">it's part of your growth system</span>
-            </h2>
-            <div className="service-divider" />
-
-            <p className="service-text service-text-spaced" style={{ maxWidth: "620px" }}>
-              This solution works as one part of a complete patient acquisition system:
-            </p>
-
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                gap: "8px",
-                margin: "1.5rem 0 1rem",
-              }}
-            >
-              {growthSteps.map((step, i, arr) => (
-                <div key={step.label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <button
-                    onClick={() => setActiveGrowthStep(i)}
-                    style={{
-                      padding: "9px 22px",
-                      borderRadius: "999px",
-                      fontSize: "0.875rem",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      border: i === activeGrowthStep ? "1.5px solid #e5264a" : "1.5px solid rgba(0,0,0,0.08)",
-                      background: i === activeGrowthStep ? "#e5264a" : "#f4f4f4",
-                      color: i === activeGrowthStep ? "#fff" : "#243847",
-                      transform: i === activeGrowthStep ? "translateY(-2px)" : "none",
-                      boxShadow: i === activeGrowthStep ? "0 4px 16px rgba(229,38,74,0.25)" : "none",
-                      transition: "all 0.2s ease",
-                    }}
-                  >
-                    {step.label}
-                  </button>
-                  {i < arr.length - 1 && (
-                    <span style={{ color: "#bbb", fontSize: "1.1rem", fontWeight: 300 }}>→</span>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* ✅ Detail card for active step */}
-            <div
-              style={{
-                borderLeft: "2.5px solid #e5264a",
-                padding: "0.75rem 1.25rem",
-                background: "#f9f9f9",
-                borderRadius: "0 8px 8px 0",
-                marginBottom: "1.5rem",
-                minHeight: "70px",
-                transition: "all 0.25s ease",
-              }}
-            >
-              <p style={{ fontSize: "15px", fontWeight: 600, color: "#243847", margin: "0 0 4px" }}>
-                {growthSteps[activeGrowthStep].title}
-              </p>
-              <p style={{ fontSize: "14px", color: "#555", margin: 0, lineHeight: 1.6 }}>
-                {growthSteps[activeGrowthStep].body}
-              </p>
-            </div>
-
-            <p className="service-text" style={{ maxWidth: "620px" }}>
-              Each component is designed to work together — ensuring no patient is lost between steps.{" "}
-              <strong>That's how we create predictable growth, not isolated results.</strong>
-            </p>
-          </div>
-        </section>
-      )}
 
       {/* FEATURE STRIP */}
       <section className="service-strip">
@@ -379,9 +339,17 @@ export default function ServicePageLayout({
             )}
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="100" className="service-image-wrap">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="100"
+            className="service-image-wrap"
+          >
             <div className="service-bubble service-bubble-green service-bubble-bottom-right" />
-            <img src={valueImage} alt={valueImageAlt} className="service-image service-image-mid" />
+            <img
+              src={valueImage}
+              alt={valueImageAlt}
+              className="service-image service-image-mid"
+            />
           </div>
         </div>
       </section>
@@ -392,8 +360,13 @@ export default function ServicePageLayout({
           <p data-aos="fade-up" className="service-cta-bar-text">
             {consultationText}
           </p>
-          <Link data-aos="fade-up" data-aos-delay="100" href="/contact" className="service-btn service-btn-white">
-            Book Now
+          <Link
+            data-aos="fade-up"
+            data-aos-delay="100"
+            href="/contact"
+            className="service-btn service-btn-white"
+          >
+            {consultationButtonText || "Book Now"}
           </Link>
         </div>
       </section>
@@ -407,7 +380,12 @@ export default function ServicePageLayout({
 
             <div className="service-list">
               {buildItems.map((item, i) => (
-                <div key={item} data-aos="fade-right" data-aos-delay={i * 60} className="service-list-item">
+                <div
+                  key={item}
+                  data-aos="fade-right"
+                  data-aos-delay={i * 60}
+                  className="service-list-item"
+                >
                   <span className="service-list-dot" />
                   <span>{item}</span>
                 </div>
@@ -415,8 +393,18 @@ export default function ServicePageLayout({
             </div>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="150" className="service-image-wrap">
-            <svg className="service-arc" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="150"
+            className="service-image-wrap"
+          >
+            <svg
+              className="service-arc"
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
               <path
                 d="M 10 110 Q 110 110 110 10"
                 fill="none"
@@ -425,10 +413,137 @@ export default function ServicePageLayout({
                 strokeDasharray="5 6"
               />
             </svg>
-            <img src={buildImage} alt={buildImageAlt} className="service-image service-image-tall" />
+            <img
+              src={buildImage}
+              alt={buildImageAlt}
+              className="service-image service-image-tall"
+            />
           </div>
         </div>
       </section>
+
+      {/* GROWTH SYSTEM SECTION */}
+      {showGrowthSystem && (
+        <section className="service-section service-growth-system">
+          <div className="container" data-aos="fade-up">
+            <p className="service-category" style={{ marginBottom: "0.5rem" }}>
+              How This Fits Into Your Growth System
+            </p>
+            <h2 className="service-heading" style={{ maxWidth: "680px" }}>
+              This isn't a standalone service —{" "}
+              <span className="service-heading-soft">
+                it's part of your growth system
+              </span>
+            </h2>
+            <div className="service-divider" />
+
+            <p
+              className="service-text service-text-spaced"
+              style={{ maxWidth: "620px" }}
+            >
+              This solution works as one part of a complete patient acquisition
+              system:
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "8px",
+                margin: "1.5rem 0 1rem",
+              }}
+            >
+              {growthSteps.map((step, i, arr) => (
+                <div
+                  key={step.label}
+                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
+                >
+                  <button
+                    onClick={() => setActiveGrowthStep(i)}
+                    style={{
+                      padding: "9px 22px",
+                      borderRadius: "999px",
+                      fontSize: "0.875rem",
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      border:
+                        i === activeGrowthStep
+                          ? "1.5px solid #e5264a"
+                          : "1.5px solid rgba(0,0,0,0.08)",
+                      background:
+                        i === activeGrowthStep ? "#e5264a" : "#f4f4f4",
+                      color: i === activeGrowthStep ? "#fff" : "#243847",
+                      transform:
+                        i === activeGrowthStep ? "translateY(-2px)" : "none",
+                      boxShadow:
+                        i === activeGrowthStep
+                          ? "0 4px 16px rgba(229,38,74,0.25)"
+                          : "none",
+                      transition: "all 0.2s ease",
+                    }}
+                  >
+                    {step.label}
+                  </button>
+                  {i < arr.length - 1 && (
+                    <span
+                      style={{
+                        color: "#bbb",
+                        fontSize: "1.1rem",
+                        fontWeight: 300,
+                      }}
+                    >
+                      →
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* ✅ Detail card for active step */}
+            <div
+              style={{
+                borderLeft: "2.5px solid #e5264a",
+                padding: "0.75rem 1.25rem",
+                background: "#f9f9f9",
+                borderRadius: "0 8px 8px 0",
+                marginBottom: "1.5rem",
+                minHeight: "70px",
+                transition: "all 0.25s ease",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "15px",
+                  fontWeight: 600,
+                  color: "#243847",
+                  margin: "0 0 4px",
+                }}
+              >
+                {growthSteps[activeGrowthStep].title}
+              </p>
+              <p
+                style={{
+                  fontSize: "14px",
+                  color: "#555",
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}
+              >
+                {growthSteps[activeGrowthStep].body}
+              </p>
+            </div>
+
+            <p className="service-text" style={{ maxWidth: "620px" }}>
+              Each component is designed to work together — ensuring no patient
+              is lost between steps.{" "}
+              <strong>
+                That's how we create predictable growth, not isolated results.
+              </strong>
+            </p>
+          </div>
+        </section>
+      )}
 
       <div className="pb-8">
         {processComponent ? processComponent : <ProcessSectionServices />}
@@ -447,7 +562,8 @@ export default function ServicePageLayout({
             href="https://calendly.com/digitalparadigm/product-strategy-call"
             className="service-btn service-btn-primary"
           >
-            Book Your Free Consultation
+            
+            {quoteButtonText || "Book Your Free Consultation"}
           </a>
         </div>
       </section>
@@ -457,15 +573,23 @@ export default function ServicePageLayout({
         <div className="container">
           <div data-aos="fade-up" className="service-related-heading">
             <h2 className="service-heading service-heading-center">
-              <span className="service-heading-soft mr-1"> Our </span> Related Services
+              <span className="service-heading-soft mr-1"> Our </span> Related
+              Services
             </h2>
             <div className="service-divider service-divider-center" />
           </div>
 
           <div className="service-grid service-grid-3">
             {relatedServices.map((item, i) => (
-              <div key={item.title} data-aos="fade-up" data-aos-delay={i * 100} className="service-related-card">
-                <div className="service-related-icon flex items-center justify-center">{item.icon}</div>
+              <div
+                key={item.title}
+                data-aos="fade-up"
+                data-aos-delay={i * 100}
+                className="service-related-card"
+              >
+                <div className="service-related-icon flex items-center justify-center">
+                  {item.icon}
+                </div>
                 <h3 className="service-related-title">{item.title}</h3>
                 <div className="service-related-line" />
                 <p className="service-related-text">{item.text}</p>
@@ -480,19 +604,27 @@ export default function ServicePageLayout({
         <div className="container">
           <div data-aos="fade-up" className="service-faq-heading">
             <h2 className="service-heading service-heading-center">
-              <span className="service-heading-soft-light">Frequently</span> Asked Questions
+              <span className="service-heading-soft-light">Frequently</span>{" "}
+              Asked Questions
             </h2>
             <div className="service-divider service-divider-center" />
           </div>
 
           <div className="service-grid service-grid-faq">
             {faqs.map((faq, i) => (
-              <div key={i} data-aos="fade-up" data-aos-delay={(i % 2) * 80} className="service-faq-item">
+              <div
+                key={i}
+                data-aos="fade-up"
+                data-aos-delay={(i % 2) * 80}
+                className="service-faq-item"
+              >
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="service-faq-button"
                 >
-                  <span className="service-faq-icon">{openFaq === i ? "−" : "›"}</span>
+                  <span className="service-faq-icon">
+                    {openFaq === i ? "−" : "›"}
+                  </span>
                   <span className="service-faq-question">{faq.q}</span>
                 </button>
                 {openFaq === i && <p className="service-faq-answer">{faq.a}</p>}
@@ -502,7 +634,74 @@ export default function ServicePageLayout({
         </div>
       </section>
 
-      <CTASection />
+      <section
+        className="relative py-16 md:py-20"
+        style={{
+          backgroundImage: `url('${finalCtaBackgroundImage}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        {/* Black overlay with 70% opacity */}
+        <div className="absolute inset-0 bg-black opacity-80" />
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          <div className="grid md:grid-cols-1 gap-12 items-center mb-12">
+            <div>
+              <p
+                className="text-base md:text-lg mb-2 text-pink-300 font-semibold"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                {finalCtaTitle}
+              </p>
+
+              <h2
+                className="text-white md:text-6xl text-3xl font-extrabold mb-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                {finalCtaSubtitle}
+              </h2>
+
+              <p
+                className="text-base md:text-lg mb-8 text-pink-100"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                {finalCtaDescription}
+              </p>
+
+              <div
+                className="flex flex-wrap gap-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <a href={finalCtaButton1Link} target="_blank">
+                  <button className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors duration-300 flex items-center gap-2">
+                    <span>{finalCtaButton1Text}</span>
+                    <span>|</span>
+                    <span><RocketIcon size={14} /></span>
+                  </button>
+                </a>
+
+                <a
+                  href={finalCtaButton2Link}
+                  target="_blank"
+                  className="px-6 py-3 bg-white text-pink-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+                >
+                  <span>{finalCtaButton2Text}</span>
+                  <span>|</span>
+                  <span><PhoneCall size={14} /></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ScrollToTopButton />
+      </section>
     </main>
   );
 }
@@ -530,7 +729,7 @@ ServicePageLayout.propTypes = {
       icon: PropTypes.node,
       title: PropTypes.string,
       text: PropTypes.string,
-    })
+    }),
   ),
 
   showGrowthSystem: PropTypes.bool,
@@ -544,13 +743,14 @@ ServicePageLayout.propTypes = {
       text: PropTypes.string.isRequired,
       tag: PropTypes.string,
       tagColor: PropTypes.oneOf(["pink", "green", "blue"]),
-    })
+    }),
   ),
   valueResultLabel: PropTypes.string,
   valueImage: PropTypes.string,
   valueImageAlt: PropTypes.string,
 
   consultationText: PropTypes.string,
+  consultationButtonText: PropTypes.string,
 
   buildTitle: PropTypes.string,
   buildItems: PropTypes.arrayOf(PropTypes.string),
@@ -563,29 +763,39 @@ ServicePageLayout.propTypes = {
       step: PropTypes.string,
       title: PropTypes.string,
       text: PropTypes.string,
-    })
+    }),
   ),
 
   quoteText: PropTypes.string,
+  quoteButtonText: PropTypes.string,
 
   relatedServices: PropTypes.arrayOf(
     PropTypes.shape({
       icon: PropTypes.node,
       title: PropTypes.string,
       text: PropTypes.string,
-    })
+    }),
   ),
 
   faqs: PropTypes.arrayOf(
     PropTypes.shape({
       q: PropTypes.string,
       a: PropTypes.string,
-    })
+    }),
   ),
 
   finalCtaText: PropTypes.string,
   finalCtaButtonText: PropTypes.string,
   finalCtaButtonLink: PropTypes.string,
+
+  finalCtaBackgroundImage: PropTypes.string,
+  finalCtaTitle: PropTypes.string,
+  finalCtaSubtitle: PropTypes.string,
+  finalCtaDescription: PropTypes.string,
+  finalCtaButton1Text: PropTypes.string,
+  finalCtaButton1Link: PropTypes.string,
+  finalCtaButton2Text: PropTypes.string,
+  finalCtaButton2Link: PropTypes.string,
 
   processComponent: PropTypes.node,
 };

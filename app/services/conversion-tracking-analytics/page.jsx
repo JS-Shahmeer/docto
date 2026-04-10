@@ -65,7 +65,7 @@ Leads come in — but from where? Calls happen — but from which campaign? Book
       valueImageAlt="Clinic performance analytics dashboard"
  
       consultationText="If you paused your marketing today — would you know what actually worked?"
- 
+      consultationButtonText="BOOK YOUR AUDIT"
       buildTitle="Built for clinics that want clarity and control"
       buildItems={[
         "Clinics spending on ads without clear ROI",
@@ -131,10 +131,13 @@ Leads come in — but from where? Calls happen — but from which campaign? Book
           a: "Typically 1–2 weeks depending on complexity.",
         },
       ]}
- 
-      finalCtaText="Ready to Turn Data Into Growth? Get full clarity on what's working — and scale your clinic with confidence."
-      finalCtaButtonText="Get Free Tracking Audit"
-      finalCtaButtonLink="/contact"
+
+      finalCtaSubtitle="Ready to Turn Data Into Growth?"
+      finalCtaDescription="Get full clarity on what's working — and scale your clinic with confidence."
+      finalCtaButton1Text="Get Free Tracking Audit"
+      finalCtaButton1Link="/contact"
+      finalCtaButton2Text="Book a Strategy Call"
+      finalCtaButton2Link="https://calendly.com/digitalparadigm/product-strategy-call"
     />
   );
 }

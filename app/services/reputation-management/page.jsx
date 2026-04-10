@@ -112,12 +112,9 @@ If they see inconsistency, negativity, or silence — they choose someone else.`
           a: "It can be ongoing to maintain and improve your reputation.",
         },
       ]}
-      finalCtaText={`Ready to Build a Reputation Patients Trust Instantly?
-
-Take control of your online presence and turn it into a growth asset.`}
-      finalCtaButtonText="Get Free Reputation Audit"
-      finalCtaButtonLink="/contact"
       processComponent={<ProcessSectionServicesFive />}
+      finalCtaSubtitle="Ready to Build a Reputation Patients Trust Instantly?"
+      finalCtaDescription="Take control of your online presence and turn it into a growth asset."
     />
   );
 }

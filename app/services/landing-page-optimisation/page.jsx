@@ -23,7 +23,7 @@ We design and optimise high-converting landing pages that turn ad clicks into re
       heroImage="/assets/img/inner-pages/landing-page-optimisation/002.webp"
       heroImageAlt="Landing page optimisation for clinics"
       sectionTwoTitle="Most clinics don’t have a traffic problem — they have a conversion problem."
-sectionTwoTextOne="You’re running ads. You’re getting clicks. But patients aren’t booking. Why? Because they land on generic websites, slow pages, confusing layouts, and too many options — and then they leave."
+      sectionTwoTextOne="You’re running ads. You’re getting clicks. But patients aren’t booking. Why? Because they land on generic websites, slow pages, confusing layouts, and too many options — and then they leave."
       sectionTwoTextTwo="Landing page optimisation improves the structure, messaging, and flow of each page so more visitors trust your clinic and take the next step."
       sectionTwoImage="/assets/img/inner-pages/landing-page-optimisation/003.webp"
       sectionTwoImageAlt="Optimised landing page design for clinics"
@@ -45,26 +45,25 @@ sectionTwoTextOne="You’re running ads. You’re getting clicks. But patients a
         },
       ]}
       valueTitle="More conversions — without increasing ad spend"
-valueTextOne="You don’t need more traffic — you need your existing traffic to convert better. We optimise your landing pages using proven conversion principles including clear above-the-fold messaging, strong CTAs, reduced friction, and trust signals."
-
-valueTextTwo="Visitors decide within seconds whether to stay or leave — and clarity is what drives action. The result is higher conversion rates, lower cost per patient, and more bookings from the same traffic."
+      valueTextOne="You don’t need more traffic — you need your existing traffic to convert better. We optimise your landing pages using proven conversion principles including clear above-the-fold messaging, strong CTAs, reduced friction, and trust signals."
+      valueTextTwo="Visitors decide within seconds whether to stay or leave — and clarity is what drives action. The result is higher conversion rates, lower cost per patient, and more bookings from the same traffic."
       valueImage="/assets/img/inner-pages/landing-page-optimisation/004.webp"
       valueImageAlt="Clinic landing page improvements"
-      consultationText="Want your landing pages to convert more visitors into patients?"
-      buildTitle="What We Help Build"
+      consultationText="If you doubled your conversion rate — how many more patients would you have?"
+      consultationButtonText="BOOK YOUR AUDIT"
+      buildTitle="Built for clinics serious about conversion"
       buildItems={[
-        "Conversion-focused page structure",
-        "Improved service messaging",
-        "Stronger call-to-action placement",
-        "Trust-building page sections",
-        "Clearer enquiry pathways",
-        "User journey improvements",
-        "Mobile-friendly landing experiences",
-        "Performance-focused page refinements",
+        "Clinics running ads but not getting bookings",
+        "Clinics sending traffic to generic websites",
+        "High cost per lead campaigns",
+        "Clinics scaling paid ads",
+        "Clinics wanting better ROI",
+        "Clinics focused on measurable growth",
       ]}
       buildImage="/assets/img/inner-pages/landing-page-optimisation/001.webp"
       buildImageAlt="Optimised clinic landing page build"
-      quoteText="Small changes in page messaging and structure can lead to a major lift in enquiries and bookings."
+      quoteText="More traffic won’t fix a page that doesn’t convert."
+      quoteButtonText="GET YOUR FREE AUDIT"
       relatedServices={[
         {
           icon: <TrendingUp size={26} />,
@@ -100,10 +99,15 @@ valueTextTwo="Visitors decide within seconds whether to stay or leave — and cl
           a: "Yes, improving your conversion rate often helps you generate more enquiries from the traffic you already have.",
         },
       ]}
-      finalCtaText="Ready to improve how your landing pages convert?"
-      finalCtaButtonText="Book Your Free Consultation"
-      finalCtaButtonLink="/contact"
+  
       processComponent={<ProcessSectionServicesTwo />}
+
+      finalCtaSubtitle="Ready to Turn More Clicks Into Patients?"
+      finalCtaDescription="Stop losing high-intent traffic — and start converting it into consistent bookings."
+      finalCtaButton1Text="Get Free Landing Page Audit"
+      finalCtaButton1Link="/contact"
+      finalCtaButton2Text="Book a Strategy Call"
+      finalCtaButton2Link="https://calendly.com/digitalparadigm/product-strategy-call"
     />
   );
 }

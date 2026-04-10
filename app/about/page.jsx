@@ -35,7 +35,12 @@ export default function AboutPage() {
 
         <div className="container about-hero-grid">
           <motion.div initial="hidden" animate="show">
-            <motion.p variants={fadeUp} custom={0} className="about-hero-label" style={{color: "#ef2f6b"}}>
+            <motion.p
+              variants={fadeUp}
+              custom={0}
+              className="about-hero-label"
+              style={{ color: "#ef2f6b" }}
+            >
               Modern Digital Growth for Healthcare
             </motion.p>
 
@@ -52,7 +57,7 @@ export default function AboutPage() {
               custom={0.2}
               className="about-hero-text"
             >
-              <p className="text-black">We help healthcare providers:</p>
+              {/* <p className="text-black">We help healthcare providers:</p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center gap-1">
                   <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
@@ -70,7 +75,12 @@ export default function AboutPage() {
                   <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
                   <span className="capitalize">build predictable revenue pipelines</span>
                 </li>
-              </ul>
+              </ul> */}
+              <p className="text-black">
+                We help healthcare providers attract, convert, and manage more
+                patients through compliant marketing, smart automation, and
+                data-driven systems.
+              </p>
             </motion.div>
 
             <motion.div
@@ -88,7 +98,6 @@ export default function AboutPage() {
                 <span className="hero-services-divider">|</span>
                 <span>+</span>
               </a>
-              
             </motion.div>
 
             {/* <motion.div
@@ -357,7 +366,8 @@ absolute top-[70px] left-1/2 -translate-x-1/2
             >
               <p className="about-section-subtitle">Our Philosophy</p>
               <h2 className="about-section-title font-semibold mb-4">
-                Growth should not depend on luck, referrals, or inconsistent marketing.
+                Growth should not depend on luck, referrals, or inconsistent
+                marketing.
               </h2>
               <p className="text-base leading-7 text-slate-700 mb-6">
                 It should be:
@@ -377,7 +387,7 @@ absolute top-[70px] left-1/2 -translate-x-1/2
                 </li>
               </ul>
               <p className="text-base md:text-lg font-semibold leading-7 text-slate-700 mt-6">
-                That’s what we build. 
+                That’s what we build.
               </p>
             </motion.div>
 
@@ -472,12 +482,14 @@ absolute top-[70px] left-1/2 -translate-x-1/2
             </p>
           </div>
 
-          <Link
-            href="/contact"
-            className="inline-flex md:min-w-[180px] items-center justify-center bg-[#ef2f6b] border border-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors"
+          <a
+            href="https://calendly.com/digitalparadigm/product-strategy-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex md:min-w-[220px] items-center justify-center bg-[#ef2f6b] border border-[#ef2f6b] text-white rounded-full px-7 py-3 font-bold hover:bg-pink-600 transition-colors"
           >
-            Get In Touch
-          </Link>
+            Book a Strategy Call
+          </a>
         </motion.div>
       </section>
     </main>
