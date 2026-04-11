@@ -80,10 +80,10 @@ absolute -top-[30px] left-0
                 >
                   <Check className="text-green-600 mt-2" size={18} />
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900">
+                    <h4 className="text-base font-bold text-gray-900">
                       {item.title}
                     </h4>
-                    <p className="text-base text-gray-600">{item.text}</p>
+                    <p className="text-[15px] text-gray-700">{item.text}</p>
                   </div>
                 </div>
               ))}

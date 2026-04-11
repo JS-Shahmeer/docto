@@ -41,7 +41,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <HomeHeroTrustBar />
+      {/* <HomeHeroTrustBar /> */}
       <ClinicChallenges />
       <CoreSolutions />
       <GrowthSection />
