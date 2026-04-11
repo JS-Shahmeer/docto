@@ -259,8 +259,7 @@ export default function Header() {
           </nav>
 
           <Link
-            href="https://calendly.com/digitalparadigm/product-strategy-call"
-            target="_blank"
+            href="/contact"
             className="hidden lg:inline-flex items-center justify-center bg-[#ef2f6b] text-white rounded-full px-6 py-2.5 font-bold hover:bg-pink-600 transition-colors xl:text-sm text-[11px]"
           >
             Get Free Growth Audit

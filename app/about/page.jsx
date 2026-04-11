@@ -149,11 +149,24 @@ export default function AboutPage() {
               transition={{ delay: 0.5, duration: 0.7 }}
             >
               <p className="about-floating-label">Our Focus</p>
-              <p className="about-floating-text">
-                Helping healthcare businesses attract the right audience with
-                modern digital strategy, stronger visibility, and refined brand
-                experiences.
-              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-0.5">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-about-floating-text">Attract high-intent patients</span>
+                </li>
+                <li className="flex items-center gap-0.5">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-about-floating-text">Convert more enquiries into bookings</span>
+                </li>
+                <li className="flex items-center gap-0.5">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-about-floating-text">Reduce no-shows and drop-offs</span>
+                </li>
+                <li className="flex items-center gap-0.5">
+                  <Dot size={28} className="shrink-0 text-[#ef2f6b]" />
+                  <span className="text-about-floating-text">Build predictable revenue pipelines</span>
+                </li>
+              </ul>
             </motion.div>
           </motion.div>
         </div>

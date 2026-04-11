@@ -68,10 +68,10 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <div className="contact-info-card">
+              {/* <div className="contact-info-card">
                 <h3>Growth Solutions</h3>
                 <span className="text-sm text-[#1e293b]">Launch System, Growth Engine, PatientFlow AI, Authority Builder & Intelligence Dashboard</span>
-              </div>
+              </div> */}
 
               {/* <div className="contact-info-card">
                 <h3>Response Time</h3>

@@ -10,10 +10,10 @@ export default function ClinicChallenges() {
       title: "Inconsistent patient bookings",
       text: "Some weeks are full, others are quiet—making revenue unpredictable.",
     },
-    {
-      title: "Website traffic that doesn’t convert",
-      text: "People visit your site but don’t take the next step to book.",
-    },
+    // {
+    //   title: "Website traffic that doesn’t convert",
+    //   text: "People visit your site but don’t take the next step to book.",
+    // },
     {
       title: "Low visibility in local searches",
       text: "Patients are choosing other clinics simply because they can find them first.",
@@ -22,10 +22,10 @@ export default function ClinicChallenges() {
       title: "No-shows and missed revenue",
       text: "Gaps in your schedule lead to lost income and wasted time.",
     },
-    {
-      title: "Weak or inconsistent online reputation",
-      text: "Not enough quality reviews to build trust and attract new patients.",
-    },
+    // {
+    //   title: "Weak or inconsistent online reputation",
+    //   text: "Not enough quality reviews to build trust and attract new patients.",
+    // },
     {
       title: "Marketing that doesn’t deliver ROI",
       text: "Money is being spent, but results are unclear or inconsistent.",

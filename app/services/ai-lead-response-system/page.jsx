@@ -83,7 +83,7 @@ But most clinics miss calls, reply late, and forget follow-ups.`}
           <ProcessSectionServicesFour />
 
           {/* Mid CTA — consistent with other service pages */}
-          <div style={{ background: "#fff", padding: "3rem 0" }}>
+          <div style={{ background: "#fff", padding: "3rem 0", display: "none" }}>
             <div
               className="container"
               style={{
@@ -160,7 +160,7 @@ But most clinics miss calls, reply late, and forget follow-ups.`}
         </>
       }
 
-      quoteText="Speed is the difference between losing and winning patients."
+      quoteText="Keep in mind, Speed doesn't just improve experience — it increases revenue."
 
       relatedServices={[
         {

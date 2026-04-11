@@ -84,7 +84,7 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           <ProcessSectionServicesThree />
 
           {/* Mid CTA — consistent card style across all service pages */}
-          <div style={{ background: "#fff", padding: "3rem 0" }}>
+          <div style={{ background: "#fff", padding: "3rem 0", display: "none" }}>
             <div
               className="container"
               style={{
@@ -161,7 +161,7 @@ If your clinic isn't visible, you don't exist in their decision process.`}
           </div>
         </>
       }
-      quoteText="Build a growth system that works — even when ads are off."
+      quoteText="Keep in mind, The best time to start SEO was 6 months ago. The next best time is now."
       relatedServices={[
         {
           icon: <Waypoints size={26} />,

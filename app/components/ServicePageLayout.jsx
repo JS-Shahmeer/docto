@@ -167,7 +167,7 @@ export default function ServicePageLayout({
   valueTextOne,
   valueTextTwo,
   valueResultItems = [],
-  valueResultLabel = "The result?",
+  valueResultLabel = "",
   valueImage,
   valueImageAlt,
 
@@ -424,7 +424,7 @@ export default function ServicePageLayout({
 
       {/* GROWTH SYSTEM SECTION */}
       {showGrowthSystem && (
-        <section className="service-section service-growth-system">
+        <section className="service-section service-growth-system" style={{display: "none"}}>
           <div className="container" data-aos="fade-up">
             <p className="service-category" style={{ marginBottom: "0.5rem" }}>
               How This Fits Into Your Growth System
@@ -500,7 +500,6 @@ export default function ServicePageLayout({
               ))}
             </div>
 
-            {/* ✅ Detail card for active step */}
             <div
               style={{
                 borderLeft: "2.5px solid #e5264a",
